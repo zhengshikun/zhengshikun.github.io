@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhengshikun.site/"/>
-  <updated>2018-12-08T07:41:38.871Z</updated>
+  <updated>2018-12-08T12:07:29.234Z</updated>
   <id>http://zhengshikun.site/</id>
   
   <author>
@@ -21,9 +21,13 @@
     <link href="http://zhengshikun.site/2018/12/08/%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
     <id>http://zhengshikun.site/2018/12/08/博客的第一篇文章/</id>
     <published>2018-12-08T07:40:34.000Z</published>
-    <updated>2018-12-08T07:41:38.871Z</updated>
+    <updated>2018-12-08T12:07:29.234Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="hello-word"><a href="#hello-word" class="headerlink" title="hello word"></a>hello word</h2><a id="more"></a><p>你好哇！这是我的第一篇文章</p>]]></content>
     
     <summary type="html">
+    
+      &lt;h2 id=&quot;hello-word&quot;&gt;&lt;a href=&quot;#hello-word&quot; class=&quot;headerlink&quot; title=&quot;hello word&quot;&gt;&lt;/a&gt;hello word&lt;/h2&gt;
     
     </summary>
     
