@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhengshikun.site/"/>
-  <updated>2018-12-11T08:19:53.149Z</updated>
+  <updated>2018-12-12T07:56:41.751Z</updated>
   <id>http://zhengshikun.site/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>web前端代码规范</title>
+    <link href="http://zhengshikun.site/2018/12/12/web%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+    <id>http://zhengshikun.site/2018/12/12/web前端代码规范/</id>
+    <published>2018-12-12T07:01:36.000Z</published>
+    <updated>2018-12-12T07:56:41.751Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;此项目用于记录规范的、高可维护性的前端代码，这是通过分析 Github 众多前端代码库，总结出来的前端代码书写规范。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="代码规范" scheme="http://zhengshikun.site/categories/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+    
+    
+      <category term="代码" scheme="http://zhengshikun.site/tags/%E4%BB%A3%E7%A0%81/"/>
+    
+      <category term="规范" scheme="http://zhengshikun.site/tags/%E8%A7%84%E8%8C%83/"/>
+    
+      <category term="html" scheme="http://zhengshikun.site/tags/html/"/>
+    
+      <category term="css" scheme="http://zhengshikun.site/tags/css/"/>
+    
+      <category term="js" scheme="http://zhengshikun.site/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vscode快捷键</title>
+    <link href="http://zhengshikun.site/2018/12/12/vscode%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <id>http://zhengshikun.site/2018/12/12/vscode快捷键/</id>
+    <published>2018-12-12T06:22:16.000Z</published>
+    <updated>2018-12-12T06:53:09.986Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;如标题所说的，vscode的快捷键。&lt;br&gt;中英文对照。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="常用工具" scheme="http://zhengshikun.site/categories/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="快捷键" scheme="http://zhengshikun.site/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+      <category term="vscode" scheme="http://zhengshikun.site/tags/vscode/"/>
+    
+  </entry>
   
   <entry>
     <title>vscode插件</title>
@@ -32,9 +82,9 @@
       <category term="常用工具" scheme="http://zhengshikun.site/categories/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="插件" scheme="http://zhengshikun.site/tags/%E6%8F%92%E4%BB%B6/"/>
-    
       <category term="vscode" scheme="http://zhengshikun.site/tags/vscode/"/>
+    
+      <category term="插件" scheme="http://zhengshikun.site/tags/%E6%8F%92%E4%BB%B6/"/>
     
   </entry>
   
@@ -103,11 +153,11 @@
   </entry>
   
   <entry>
-    <title>博客的第一篇文章</title>
+    <title>博客的第一篇文章 - markdown语法</title>
     <link href="http://zhengshikun.site/2018/12/08/%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
     <id>http://zhengshikun.site/2018/12/08/博客的第一篇文章/</id>
     <published>2018-12-08T07:40:34.000Z</published>
-    <updated>2018-12-11T07:13:00.456Z</updated>
+    <updated>2018-12-12T07:41:20.426Z</updated>
     
     <summary type="html">
     
