@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhengshikun.site/"/>
-  <updated>2018-12-12T07:56:41.751Z</updated>
+  <updated>2018-12-13T07:37:53.249Z</updated>
   <id>http://zhengshikun.site/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sass基本用法</title>
+    <link href="http://zhengshikun.site/2018/12/13/sass%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/"/>
+    <id>http://zhengshikun.site/2018/12/13/sass基本用法/</id>
+    <published>2018-12-13T05:39:27.000Z</published>
+    <updated>2018-12-13T07:37:53.249Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;SASS是一种CSS的开发工具，提供了许多便利的写法，大大节省了设计者的时间，使得CSS的开发，变得简单和可维护。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://zhengshikun.site/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="sass" scheme="http://zhengshikun.site/tags/sass/"/>
+    
+      <category term="css" scheme="http://zhengshikun.site/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>web前端代码规范</title>
@@ -32,13 +54,13 @@
       <category term="代码规范" scheme="http://zhengshikun.site/categories/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
     
     
+      <category term="css" scheme="http://zhengshikun.site/tags/css/"/>
+    
       <category term="代码" scheme="http://zhengshikun.site/tags/%E4%BB%A3%E7%A0%81/"/>
     
       <category term="规范" scheme="http://zhengshikun.site/tags/%E8%A7%84%E8%8C%83/"/>
     
       <category term="html" scheme="http://zhengshikun.site/tags/html/"/>
-    
-      <category term="css" scheme="http://zhengshikun.site/tags/css/"/>
     
       <category term="js" scheme="http://zhengshikun.site/tags/js/"/>
     
