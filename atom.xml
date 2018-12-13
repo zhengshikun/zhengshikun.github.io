@@ -82,9 +82,9 @@
       <category term="常用工具" scheme="http://zhengshikun.site/categories/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="快捷键" scheme="http://zhengshikun.site/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-    
       <category term="vscode" scheme="http://zhengshikun.site/tags/vscode/"/>
+    
+      <category term="快捷键" scheme="http://zhengshikun.site/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
     
   </entry>
   
@@ -104,9 +104,9 @@
       <category term="常用工具" scheme="http://zhengshikun.site/categories/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="vscode" scheme="http://zhengshikun.site/tags/vscode/"/>
-    
       <category term="插件" scheme="http://zhengshikun.site/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+      <category term="vscode" scheme="http://zhengshikun.site/tags/vscode/"/>
     
   </entry>
   
