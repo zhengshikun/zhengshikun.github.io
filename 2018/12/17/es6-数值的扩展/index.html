@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="js,Ajax,">
+  <meta name="keywords" content="js,es6,">
 
 
 
@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="Ajax = 异步JavaScript和xml。Ajax是一种用于创建快速动态网页的技术。通过在后台与服务器进行少量数据交换，Ajax 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。传统的网页（不使用 Ajax）如果需要更新内容，必需重载整个网页面。">
-<meta name="keywords" content="js,Ajax">
+<meta name="description" content="这篇主要总结“es6标准入门”这本书的数值的扩展。把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。">
+<meta name="keywords" content="js,es6">
 <meta property="og:type" content="article">
-<meta property="og:title" content="原生的Ajax">
-<meta property="og:url" content="http://zhengshikun.site/2018/12/11/原生的ajax/index.html">
+<meta property="og:title" content="es6-数值的扩展">
+<meta property="og:url" content="http://zhengshikun.site/2018/12/17/es6-数值的扩展/index.html">
 <meta property="og:site_name" content="骑着毛驴的boy">
-<meta property="og:description" content="Ajax = 异步JavaScript和xml。Ajax是一种用于创建快速动态网页的技术。通过在后台与服务器进行少量数据交换，Ajax 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。传统的网页（不使用 Ajax）如果需要更新内容，必需重载整个网页面。">
+<meta property="og:description" content="这篇主要总结“es6标准入门”这本书的数值的扩展。把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-11T07:09:48.121Z">
+<meta property="og:updated_time" content="2018-12-17T07:25:36.465Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="原生的Ajax">
-<meta name="twitter:description" content="Ajax = 异步JavaScript和xml。Ajax是一种用于创建快速动态网页的技术。通过在后台与服务器进行少量数据交换，Ajax 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。传统的网页（不使用 Ajax）如果需要更新内容，必需重载整个网页面。">
+<meta name="twitter:title" content="es6-数值的扩展">
+<meta name="twitter:description" content="这篇主要总结“es6标准入门”这本书的数值的扩展。把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。">
 
 
 
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://zhengshikun.site/2018/12/11/原生的ajax/">
+  <link rel="canonical" href="http://zhengshikun.site/2018/12/17/es6-数值的扩展/">
 
 
 
 
 
-  <title>原生的Ajax | 骑着毛驴的boy</title>
+  <title>es6-数值的扩展 | 骑着毛驴的boy</title>
   
 
 
@@ -314,7 +314,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zhengshikun.site/2018/12/11/原生的ajax/">
+    <link itemprop="mainEntityOfPage" href="http://zhengshikun.site/2018/12/17/es6-数值的扩展/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhengshikun">
@@ -331,7 +331,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">原生的Ajax</h1>
+          <h1 class="post-title" itemprop="name headline">es6-数值的扩展</h1>
         
 
         <div class="post-meta">
@@ -343,8 +343,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-11T14:46:39+08:00">
-                2018-12-11
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-17T15:02:35+08:00">
+                2018-12-17
               </time>
             
 
@@ -384,8 +384,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/12/11/原生的ajax/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/12/11/原生的ajax/" itemprop="commentCount"></span>
+                <a href="/2018/12/17/es6-数值的扩展/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/12/17/es6-数值的扩展/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -393,7 +393,7 @@
 
           
           
-             <span id="/2018/12/11/原生的ajax/" class="leancloud_visitors" data-flag-title="原生的Ajax">
+             <span id="/2018/12/17/es6-数值的扩展/" class="leancloud_visitors" data-flag-title="es6-数值的扩展">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -418,7 +418,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  634
+                  1.6k
                 </span>
               
 
@@ -434,7 +434,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  7
                 </span>
               
             </div>
@@ -455,37 +455,83 @@
       
 
       
-        <p><code>Ajax</code> = 异步<code>JavaScript</code>和<code>xml</code>。<br><code>Ajax</code>是一种用于创建快速动态网页的技术。<br>通过在后台与服务器进行少量数据交换，<code>Ajax</code> 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。<br>传统的网页（不使用 <code>Ajax</code>）如果需要更新内容，必需重载整个网页面。</p>
+        <p>这篇主要总结“es6标准入门”这本书的数值的扩展。<br>把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。</p>
 <a id="more"></a>
-<h2 id="创建XMLHttpRequest对象"><a href="#创建XMLHttpRequest对象" class="headerlink" title="创建XMLHttpRequest对象"></a>创建XMLHttpRequest对象</h2><p><code>XMLHttpRequest</code> 用于在后台与服务器交换数据。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">let xhr = new XMLHttpRequest();</span><br></pre></td></tr></table></figure>
-<h2 id="向服务器发送请求请求"><a href="#向服务器发送请求请求" class="headerlink" title="向服务器发送请求请求"></a>向服务器发送请求请求</h2><p>如需将请求发送到服务器，我们使用 <code>XMLHttpRequest</code> 对象的 <code>open()</code> 和 <code>send()</code> 方法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xhr.open(method,url,async)</span><br><span class="line">  xhr.send(string)</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p><code>method</code>: <code>string</code>，请求的类型；<code>GET</code> 或 <code>POST</code><br><code>url</code>: <code>string</code>,文件在服务器上的位置<br><code>async</code>: <code>Boolean</code>，<code>true</code>（异步）或 <code>false</code>（同步)<br><code>string</code>: <code>string</code>,仅用于 <code>POST</code> 请求,将请求发送到服务器。</p>
-</blockquote>
-<h2 id="服务器响应"><a href="#服务器响应" class="headerlink" title="服务器响应"></a>服务器响应</h2><p>如需获得来自服务器的响应，请使用 <code>XMLHttpRequest</code> 对象的 <code>responseText</code> 或 <code>responseXML</code> 属性。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">responseText   // 获得字符串形式的响应数据</span><br><span class="line">responseXML	   // 获得 XML 形式的响应数据</span><br></pre></td></tr></table></figure>
-<h2 id="onreadystatechange-事件"><a href="#onreadystatechange-事件" class="headerlink" title="onreadystatechange 事件"></a>onreadystatechange 事件</h2><p>当请求被发送到服务器时，我们需要执行一些基于响应的任务。<br>每当 <code>readyState</code> 改变时，就会触发 <code>onreadystatechange</code> 事件<br><code>readyState</code> 属性存有 <code>XMLHttpRequest</code> 的状态信息。</p>
-<p><code>onreadystatechange</code>:  存储函数（或函数名），每当 <code>readyState</code> 属性改变时，就会调用该函数。</p>
+<h2 id="二进制和八进制表示法"><a href="#二进制和八进制表示法" class="headerlink" title="二进制和八进制表示法"></a>二进制和八进制表示法</h2><p>ES6 提供了二进制和八进制数值的新的写法，分别用前缀0b（或0B）和0o（或0O）表示。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">0b111110111 === 503 // true</span><br><span class="line">0o767 === 503 // true</span><br></pre></td></tr></table></figure>
+<p>如果要将0b和0o前缀的字符串数值转为十进制，要使用Number方法。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Number(&apos;0b111&apos;)  // 7</span><br><span class="line">Number(&apos;0o10&apos;)  // 8</span><br></pre></td></tr></table></figure>
+<h2 id="Number-isFinite-Number-isNaN"><a href="#Number-isFinite-Number-isNaN" class="headerlink" title="Number.isFinite(), Number.isNaN()"></a>Number.isFinite(), Number.isNaN()</h2><p>ES6 在<code>Number</code>对象上，新提供了<code>Number.isFinite()</code>和<code>Number.isNaN()</code>两个方法。</p>
+<p><code>Number.isFinite()</code>用来检查一个数值是否为有限的（finite），即不是<code>Infinity</code>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Number.isFinite(15); // true</span><br><span class="line">Number.isFinite(0.8); // true</span><br><span class="line">Number.isFinite(NaN); // false</span><br><span class="line">Number.isFinite(Infinity); // false</span><br><span class="line">Number.isFinite(-Infinity); // false</span><br><span class="line">Number.isFinite(&apos;foo&apos;); // false</span><br><span class="line">Number.isFinite(&apos;15&apos;); // false</span><br><span class="line">Number.isFinite(true); // false</span><br></pre></td></tr></table></figure>
+<p>Number.isNaN()用来检查一个值是否为NaN。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Number.isNaN(NaN) // true</span><br><span class="line">Number.isNaN(15) // false</span><br><span class="line">Number.isNaN(&apos;15&apos;) // false</span><br><span class="line">Number.isNaN(true) // false</span><br><span class="line">Number.isNaN(9/NaN) // true</span><br><span class="line">Number.isNaN(&apos;true&apos; / 0) // true</span><br><span class="line">Number.isNaN(&apos;true&apos; / &apos;true&apos;) // true</span><br></pre></td></tr></table></figure>
+<p>它们与传统的全局方法isFinite()和isNaN()的区别在于，传统方法先调用Number()将非数值的值转为数值，再进行判断，而这两个新方法只对数值有效，Number.isFinite()对于非数值一律返回false, Number.isNaN()只有对于NaN才返回true，非NaN一律返回false。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">isFinite(25) // true</span><br><span class="line">isFinite(&quot;25&quot;) // true</span><br><span class="line">Number.isFinite(25) // true</span><br><span class="line">Number.isFinite(&quot;25&quot;) // false</span><br><span class="line"></span><br><span class="line">isNaN(NaN) // true</span><br><span class="line">isNaN(&quot;NaN&quot;) // true</span><br><span class="line">Number.isNaN(NaN) // true</span><br><span class="line">Number.isNaN(&quot;NaN&quot;) // false</span><br><span class="line">Number.isNaN(1) // false</span><br></pre></td></tr></table></figure>
+<h2 id="Number-parseInt-Number-parseFloat"><a href="#Number-parseInt-Number-parseFloat" class="headerlink" title="Number.parseInt(), Number.parseFloat()"></a>Number.parseInt(), Number.parseFloat()</h2><p>ES6 将全局方法parseInt()和parseFloat()，移植到Number对象上面，行为完全保持不变。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// ES5的写法</span><br><span class="line">parseInt(&apos;12.34&apos;) // 12</span><br><span class="line">parseFloat(&apos;123.45#&apos;) // 123.45</span><br><span class="line"></span><br><span class="line">// ES6的写法</span><br><span class="line">Number.parseInt(&apos;12.34&apos;) // 12</span><br><span class="line">Number.parseFloat(&apos;123.45#&apos;) // 123.45</span><br></pre></td></tr></table></figure>
+<p>这样做的目的，是逐步减少全局性方法，使得语言逐步模块化。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Number.parseInt === parseInt // true</span><br><span class="line">Number.parseFloat === parseFloat // true</span><br></pre></td></tr></table></figure>
+<h2 id="Number-isInteger"><a href="#Number-isInteger" class="headerlink" title="Number.isInteger()"></a>Number.isInteger()</h2><p>Number.isInteger()用来判断一个数值是否为整数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Number.isInteger(25) // true</span><br><span class="line">Number.isInteger(25.1) // false</span><br></pre></td></tr></table></figure>
+<p>如果参数不是数值，Number.isInteger返回false。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Number.isInteger() // false</span><br><span class="line">Number.isInteger(null) // false</span><br><span class="line">Number.isInteger(&apos;15&apos;) // false</span><br><span class="line">Number.isInteger(true) // false</span><br></pre></td></tr></table></figure>
+<h2 id="Number-EPSILON"><a href="#Number-EPSILON" class="headerlink" title="Number.EPSILON"></a>Number.EPSILON</h2><p>ES6 在Number对象上面，新增一个极小的常量Number.EPSILON。根据规格，它表示 1 与大于 1 的最小浮点数之间的差。</p>
+<p>对于 64 位浮点数来说，大于 1 的最小浮点数相当于二进制的1.00..001，小数点后面有连续 51 个零。这个值减去 1 之后，就等于 2 的 -52 次方。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Number.EPSILON === Math.pow(2, -52)</span><br><span class="line">// true</span><br><span class="line">Number.EPSILON</span><br><span class="line">// 2.220446049250313e-16</span><br><span class="line">Number.EPSILON.toFixed(20)</span><br><span class="line">// &quot;0.00000000000000022204&quot;</span><br></pre></td></tr></table></figure>
+<h2 id="安全整数和-Number-isSafeInteger"><a href="#安全整数和-Number-isSafeInteger" class="headerlink" title="安全整数和 Number.isSafeInteger()"></a>安全整数和 Number.isSafeInteger()</h2><p>JavaScript 能够准确表示的整数范围在-2^53到2^53之间（不含两个端点），超过这个范围，无法精确表示这个值。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Math.pow(2, 53) // 9007199254740992</span><br><span class="line"></span><br><span class="line">9007199254740992  // 9007199254740992</span><br><span class="line">9007199254740993  // 9007199254740992</span><br><span class="line"></span><br><span class="line">Math.pow(2, 53) === Math.pow(2, 53) + 1</span><br><span class="line">// true</span><br></pre></td></tr></table></figure>
+<p>ES6 引入了Number.MAX_SAFE_INTEGER和Number.MIN_SAFE_INTEGER这两个常量，用来表示这个范围的上下限。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Number.MAX_SAFE_INTEGER === Math.pow(2, 53) - 1</span><br><span class="line">// true</span><br><span class="line">Number.MAX_SAFE_INTEGER === 9007199254740991</span><br><span class="line">// true</span><br><span class="line"></span><br><span class="line">Number.MIN_SAFE_INTEGER === -Number.MAX_SAFE_INTEGER</span><br><span class="line">// true</span><br><span class="line">Number.MIN_SAFE_INTEGER === -9007199254740991</span><br><span class="line">// true</span><br></pre></td></tr></table></figure>
+<p>Number.isSafeInteger()则是用来判断一个整数是否落在这个范围之内。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">Number.isSafeInteger(&apos;a&apos;) // false</span><br><span class="line">Number.isSafeInteger(null) // false</span><br><span class="line">Number.isSafeInteger(NaN) // false</span><br><span class="line">Number.isSafeInteger(Infinity) // false</span><br><span class="line">Number.isSafeInteger(-Infinity) // false</span><br><span class="line"></span><br><span class="line">Number.isSafeInteger(3) // true</span><br><span class="line">Number.isSafeInteger(1.2) // false</span><br><span class="line">Number.isSafeInteger(9007199254740990) // true</span><br><span class="line">Number.isSafeInteger(9007199254740992) // false</span><br><span class="line"></span><br><span class="line">Number.isSafeInteger(Number.MIN_SAFE_INTEGER - 1) // false</span><br><span class="line">Number.isSafeInteger(Number.MIN_SAFE_INTEGER) // true</span><br><span class="line">Number.isSafeInteger(Number.MAX_SAFE_INTEGER) // true</span><br><span class="line">Number.isSafeInteger(Number.MAX_SAFE_INTEGER + 1) // false</span><br></pre></td></tr></table></figure>
+<h2 id="Math-对象的扩展"><a href="#Math-对象的扩展" class="headerlink" title="Math 对象的扩展"></a>Math 对象的扩展</h2><p>ES6 在 Math 对象上新增了 17 个与数学相关的方法。所有这些方法都是静态方法，只能在 Math 对象上调用。</p>
+<h3 id="Math-trunc"><a href="#Math-trunc" class="headerlink" title="Math.trunc()"></a>Math.trunc()</h3><p>Math.trunc方法用于去除一个数的小数部分，返回整数部分。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Math.trunc(4.1) // 4</span><br><span class="line">Math.trunc(4.9) // 4</span><br><span class="line">Math.trunc(-4.1) // -4</span><br><span class="line">Math.trunc(-4.9) // -4</span><br><span class="line">Math.trunc(-0.1234) // -0</span><br></pre></td></tr></table></figure>
+<h3 id="Math-sign"><a href="#Math-sign" class="headerlink" title="Math.sign()"></a>Math.sign()</h3><p>Math.sign方法用来判断一个数到底是正数、负数、还是零。对于非数值，会先将其转换为数值。</p>
+<p>它会返回五种值。</p>
 <ul>
-<li><code>readyState</code>:  存有 <code>XMLHttpRequest</code> 的状态。从 <code>0</code> 到 <code>4</code> 发生变化。</li>
+<li>参数为正数，返回+1；</li>
+<li>参数为负数，返回-1；</li>
+<li>参数为 0，返回0；</li>
+<li>参数为-0，返回-0;</li>
+<li>其他值，返回NaN。</li>
 </ul>
-<blockquote>
-<p>0: 请求未初始化<br>1: 服务器连接已建立<br>2: 请求已接收<br>3: 请求处理中<br>4: 请求已完成，且响应已就绪</p>
-</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Math.sign(-5) // -1</span><br><span class="line">Math.sign(5) // +1</span><br><span class="line">Math.sign(0) // +0</span><br><span class="line">Math.sign(-0) // -0</span><br><span class="line">Math.sign(NaN) // NaN</span><br></pre></td></tr></table></figure>
+<h3 id="Math-cbrt"><a href="#Math-cbrt" class="headerlink" title="Math.cbrt()"></a>Math.cbrt()</h3><p>Math.cbrt方法用于计算一个数的立方根。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Math.cbrt(-1) // -1</span><br><span class="line">Math.cbrt(0)  // 0</span><br><span class="line">Math.cbrt(1)  // 1</span><br><span class="line">Math.cbrt(2)  // 1.2599210498948734</span><br></pre></td></tr></table></figure>
+<h3 id="Math-clz32"><a href="#Math-clz32" class="headerlink" title="Math.clz32()"></a>Math.clz32()</h3><p>JavaScript 的整数使用 32 位二进制形式表示，Math.clz32方法返回一个数的 32 位无符号整数形式有多少个前导 0。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Math.clz32(0) // 32</span><br><span class="line">Math.clz32(1) // 31</span><br><span class="line">Math.clz32(1000) // 22</span><br><span class="line">Math.clz32(0b01000000000000000000000000000000) // 1</span><br><span class="line">Math.clz32(0b00100000000000000000000000000000) // 2</span><br></pre></td></tr></table></figure>
+<h3 id="Math-imul"><a href="#Math-imul" class="headerlink" title="Math.imul()"></a>Math.imul()</h3><p>Math.imul方法返回两个数以 32 位带符号整数形式相乘的结果，返回的也是一个 32 位的带符号整数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Math.imul(2, 4)   // 8</span><br><span class="line">Math.imul(-1, 8)  // -8</span><br><span class="line">Math.imul(-2, -2) // 4</span><br></pre></td></tr></table></figure>
+<h3 id="Math-fround"><a href="#Math-fround" class="headerlink" title="Math.fround()"></a>Math.fround()</h3><p>Math.fround方法返回一个数的32位单精度浮点数形式。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Math.fround(0)   // 0</span><br><span class="line">Math.fround(1)   // 1</span><br><span class="line">Math.fround(2 ** 24 - 1)   // 16777215</span><br></pre></td></tr></table></figure>
+<h3 id="Math-hypot"><a href="#Math-hypot" class="headerlink" title="Math.hypot()"></a>Math.hypot()</h3><p>Math.hypot方法返回所有参数的平方和的平方根。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Math.hypot(3, 4);        // 5</span><br><span class="line">Math.hypot(3, 4, 5);     // 7.0710678118654755</span><br><span class="line">Math.hypot();            // 0</span><br><span class="line">Math.hypot(NaN);         // NaN</span><br><span class="line">Math.hypot(3, 4, &apos;foo&apos;); // NaN</span><br><span class="line">Math.hypot(3, 4, &apos;5&apos;);   // 7.0710678118654755</span><br><span class="line">Math.hypot(-3);          // 3</span><br></pre></td></tr></table></figure>
+<h3 id="对数方法"><a href="#对数方法" class="headerlink" title="对数方法"></a>对数方法</h3><p>ES6 新增了 4 个对数相关方法。</p>
+<h4 id="Math-expm1"><a href="#Math-expm1" class="headerlink" title="Math.expm1()"></a>Math.expm1()</h4><p>Math.expm1(x)返回 ex - 1，即Math.exp(x) - 1。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Math.expm1(-1) // -0.6321205588285577</span><br><span class="line">Math.expm1(0)  // 0</span><br><span class="line">Math.expm1(1)  // 1.718281828459045</span><br></pre></td></tr></table></figure>
+<h4 id="Math-log1p"><a href="#Math-log1p" class="headerlink" title="Math.log1p()"></a>Math.log1p()</h4><p>Math.log1p(x)方法返回1 + x的自然对数，即Math.log(1 + x)。如果x小于-1，返回NaN。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Math.log1p(1)  // 0.6931471805599453</span><br><span class="line">Math.log1p(0)  // 0</span><br><span class="line">Math.log1p(-1) // -Infinity</span><br><span class="line">Math.log1p(-2) // NaN</span><br></pre></td></tr></table></figure>
+<h4 id="Math-log10"><a href="#Math-log10" class="headerlink" title="Math.log10()"></a>Math.log10()</h4><p>Math.log10(x)返回以 10 为底的x的对数。如果x小于 0，则返回 NaN。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Math.log10(2)      // 0.3010299956639812</span><br><span class="line">Math.log10(1)      // 0</span><br><span class="line">Math.log10(0)      // -Infinity</span><br><span class="line">Math.log10(-2)     // NaN</span><br><span class="line">Math.log10(100000) // 5</span><br></pre></td></tr></table></figure>
+<h4 id="Math-log2"><a href="#Math-log2" class="headerlink" title="Math.log2()"></a>Math.log2()</h4><p>Math.log2(x)返回以 2 为底的x的对数。如果x小于 0，则返回 NaN。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Math.log2(3)       // 1.584962500721156</span><br><span class="line">Math.log2(2)       // 1</span><br><span class="line">Math.log2(1)       // 0</span><br><span class="line">Math.log2(0)       // -Infinity</span><br><span class="line">Math.log2(-2)      // NaN</span><br><span class="line">Math.log2(1024)    // 10</span><br><span class="line">Math.log2(1 &lt;&lt; 29) // 29</span><br></pre></td></tr></table></figure>
+<h3 id="双曲函数方法"><a href="#双曲函数方法" class="headerlink" title="双曲函数方法"></a>双曲函数方法</h3><p>ES6 新增了 6 个双曲函数方法。</p>
 <ul>
-<li><code>status</code>:  </li>
+<li>Math.sinh(x) 返回x的双曲正弦（hyperbolic sine）</li>
+<li>Math.cosh(x) 返回x的双曲余弦（hyperbolic cosine）</li>
+<li>Math.tanh(x) 返回x的双曲正切（hyperbolic tangent）</li>
+<li>Math.asinh(x) 返回x的反双曲正弦（inverse hyperbolic sine）</li>
+<li>Math.acosh(x) 返回x的反双曲余弦（inverse hyperbolic cosine）</li>
+<li>Math.atanh(x) 返回x的反双曲正切（inverse hyperbolic tangent）</li>
 </ul>
-<blockquote>
-<p>200: “OK”,<br>404: 未找到页面</p>
-</blockquote>
-<p>实例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">xhr.onreadystatechange=function()&#123;</span><br><span class="line">  if (xhr.readyState==4 &amp;&amp; xhr.status==200)</span><br><span class="line">    &#123;</span><br><span class="line">      document.getElementById(&quot;div&quot;).innerHTML=xhr.responseText;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="完整版使用回调函数"><a href="#完整版使用回调函数" class="headerlink" title="完整版使用回调函数"></a>完整版使用回调函数</h2><p>回调函数是一种以参数形式传递给另一个函数的函数。</p>
-<p>如果您的网站上存在多个 <code>Ajax</code> 任务，那么您应该为创建 <code>XMLHttpRequest</code> 对象编写一个标准的函数，并为每个 <code>Ajax</code> 任务调用该函数。</p>
-<p>该函数调用应该包含 <code>URL</code> 以及发生 <code>onreadystatechange</code> 事件时执行的任务（每次调用可能不尽相同):</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function loadXMLDoc (url, cfunc) &#123;</span><br><span class="line">	let xhr = new XMLHttpRequest();</span><br><span class="line">	xhr.onreadystatechange = cfunc;</span><br><span class="line">	xhr.open(&quot;GET&quot;,url,true);</span><br><span class="line">	xhr.send();</span><br><span class="line">&#125;</span><br><span class="line">function myFunction () &#123;</span><br><span class="line">	loadXMLDoc(&quot;ajax.txt&quot;, function () &#123;</span><br><span class="line">		if(xhr.readyState == 4 &amp;&amp; xhr.status == 200)&#123;</span><br><span class="line">			document.getElementById(&quot;div&quot;).innerHTML = xhr.responseText;</span><br><span class="line">		&#125;</span><br><span class="line">	)&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="指数运算符"><a href="#指数运算符" class="headerlink" title="指数运算符"></a>指数运算符</h2><p>ES2016 新增了一个指数运算符（**）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2 ** 2 // 4</span><br><span class="line">2 ** 3 // 8</span><br></pre></td></tr></table></figure>
+<p>这个运算符的一个特点是右结合，而不是常见的左结合。多个指数运算符连用时，是从最右边开始计算的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// 相当于 2 ** (3 ** 2)</span><br><span class="line">2 ** 3 ** 2</span><br><span class="line">// 512</span><br></pre></td></tr></table></figure>
+<p>指数运算符可以与等号结合，形成一个新的赋值运算符（**=）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let a = 1.5;</span><br><span class="line">a **= 2;</span><br><span class="line">// 等同于 a = a * a;</span><br><span class="line"></span><br><span class="line">let b = 4;</span><br><span class="line">b **= 3;</span><br><span class="line">// 等同于 b = b * b * b;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -505,7 +551,7 @@
           
             <a href="/tags/js/" rel="tag"># js</a>
           
-            <a href="/tags/Ajax/" rel="tag"># Ajax</a>
+            <a href="/tags/es6/" rel="tag"># es6</a>
           
         </div>
       
@@ -518,8 +564,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/11/git的常用命令/" rel="next" title="git的常用命令">
-                <i class="fa fa-chevron-left"></i> git的常用命令
+              <a href="/2018/12/17/es6-正则的扩展/" rel="next" title="es6-正则的扩展">
+                <i class="fa fa-chevron-left"></i> es6-正则的扩展
               </a>
             
           </div>
@@ -527,10 +573,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/11/vscode插件/" rel="prev" title="vscode插件">
-                vscode插件 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -721,7 +763,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建XMLHttpRequest对象"><span class="nav-number">1.</span> <span class="nav-text">创建XMLHttpRequest对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#向服务器发送请求请求"><span class="nav-number">2.</span> <span class="nav-text">向服务器发送请求请求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#服务器响应"><span class="nav-number">3.</span> <span class="nav-text">服务器响应</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#onreadystatechange-事件"><span class="nav-number">4.</span> <span class="nav-text">onreadystatechange 事件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#完整版使用回调函数"><span class="nav-number">5.</span> <span class="nav-text">完整版使用回调函数</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#二进制和八进制表示法"><span class="nav-number">1.</span> <span class="nav-text">二进制和八进制表示法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Number-isFinite-Number-isNaN"><span class="nav-number">2.</span> <span class="nav-text">Number.isFinite(), Number.isNaN()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Number-parseInt-Number-parseFloat"><span class="nav-number">3.</span> <span class="nav-text">Number.parseInt(), Number.parseFloat()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Number-isInteger"><span class="nav-number">4.</span> <span class="nav-text">Number.isInteger()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Number-EPSILON"><span class="nav-number">5.</span> <span class="nav-text">Number.EPSILON</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安全整数和-Number-isSafeInteger"><span class="nav-number">6.</span> <span class="nav-text">安全整数和 Number.isSafeInteger()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Math-对象的扩展"><span class="nav-number">7.</span> <span class="nav-text">Math 对象的扩展</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Math-trunc"><span class="nav-number">7.1.</span> <span class="nav-text">Math.trunc()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Math-sign"><span class="nav-number">7.2.</span> <span class="nav-text">Math.sign()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Math-cbrt"><span class="nav-number">7.3.</span> <span class="nav-text">Math.cbrt()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Math-clz32"><span class="nav-number">7.4.</span> <span class="nav-text">Math.clz32()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Math-imul"><span class="nav-number">7.5.</span> <span class="nav-text">Math.imul()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Math-fround"><span class="nav-number">7.6.</span> <span class="nav-text">Math.fround()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Math-hypot"><span class="nav-number">7.7.</span> <span class="nav-text">Math.hypot()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对数方法"><span class="nav-number">7.8.</span> <span class="nav-text">对数方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Math-expm1"><span class="nav-number">7.8.1.</span> <span class="nav-text">Math.expm1()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Math-log1p"><span class="nav-number">7.8.2.</span> <span class="nav-text">Math.log1p()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Math-log10"><span class="nav-number">7.8.3.</span> <span class="nav-text">Math.log10()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Math-log2"><span class="nav-number">7.8.4.</span> <span class="nav-text">Math.log2()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#双曲函数方法"><span class="nav-number">7.9.</span> <span class="nav-text">双曲函数方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指数运算符"><span class="nav-number">8.</span> <span class="nav-text">指数运算符</span></a></li></ol></div>
             
 
           </div>
@@ -896,9 +938,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://zhengshikun.site/2018/12/11/原生的ajax/';
-          this.page.identifier = '2018/12/11/原生的ajax/';
-          this.page.title = '原生的Ajax';
+          this.page.url = 'http://zhengshikun.site/2018/12/17/es6-数值的扩展/';
+          this.page.identifier = '2018/12/17/es6-数值的扩展/';
+          this.page.title = 'es6-数值的扩展';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://zhengshikun.disqus.com/embed.js';
