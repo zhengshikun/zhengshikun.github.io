@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhengshikun.site/"/>
-  <updated>2018-12-17T07:25:36.465Z</updated>
+  <updated>2018-12-18T07:10:27.724Z</updated>
   <id>http://zhengshikun.site/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>es6-数组的扩展</title>
+    <link href="http://zhengshikun.site/2018/12/18/es6-%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/"/>
+    <id>http://zhengshikun.site/2018/12/18/es6-数组的扩展/</id>
+    <published>2018-12-18T06:00:03.000Z</published>
+    <updated>2018-12-18T07:10:27.724Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这篇主要总结“es6标准入门”这本书的数组的扩展。&lt;br&gt;把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://zhengshikun.site/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="js" scheme="http://zhengshikun.site/tags/js/"/>
+    
+      <category term="es6" scheme="http://zhengshikun.site/tags/es6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>es6-函数的扩展</title>
+    <link href="http://zhengshikun.site/2018/12/18/es6-%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A9%E5%B1%95/"/>
+    <id>http://zhengshikun.site/2018/12/18/es6-函数的扩展/</id>
+    <published>2018-12-18T04:19:08.000Z</published>
+    <updated>2018-12-18T05:46:29.218Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这篇主要总结“es6标准入门”这本书的函数的扩展。&lt;br&gt;把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://zhengshikun.site/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="js" scheme="http://zhengshikun.site/tags/js/"/>
+    
+      <category term="es6" scheme="http://zhengshikun.site/tags/es6/"/>
+    
+  </entry>
   
   <entry>
     <title>es6-数值的扩展</title>
@@ -188,9 +232,9 @@
     
       <category term="js" scheme="http://zhengshikun.site/tags/js/"/>
     
-      <category term="css" scheme="http://zhengshikun.site/tags/css/"/>
-    
       <category term="html" scheme="http://zhengshikun.site/tags/html/"/>
+    
+      <category term="css" scheme="http://zhengshikun.site/tags/css/"/>
     
       <category term="代码" scheme="http://zhengshikun.site/tags/%E4%BB%A3%E7%A0%81/"/>
     
