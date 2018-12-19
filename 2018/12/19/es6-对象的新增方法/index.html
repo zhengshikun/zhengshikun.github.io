@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="js,es6,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="骑着毛驴的boy" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="这篇主要总结“es6标准入门”这本书的对象的扩展。把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。">
+<meta name="keywords" content="js,es6">
+<meta property="og:type" content="article">
+<meta property="og:title" content="es6-对象的新增方法">
+<meta property="og:url" content="http://zhengshikun.site/2018/12/19/es6-对象的新增方法/index.html">
+<meta property="og:site_name" content="骑着毛驴的boy">
+<meta property="og:description" content="这篇主要总结“es6标准入门”这本书的对象的扩展。把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-12-19T07:56:17.067Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="es6-对象的新增方法">
+<meta name="twitter:description" content="这篇主要总结“es6标准入门”这本书的对象的扩展。把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://zhengshikun.site/2018/12/19/es6-对象的新增方法/">
+
+
+
+
+
+  <title>es6-对象的新增方法 | 骑着毛驴的boy</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?d26ed2113d292d7447199178a106e072";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">骑着毛驴的boy</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-首页">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-标签">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-分类">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-归档">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-关于我">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于我
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zhengshikun.site/2018/12/19/es6-对象的新增方法/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zhengshikun">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="骑着毛驴的boy">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">es6-对象的新增方法</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-19T15:21:16+08:00">
+                2018-12-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/12/19/es6-对象的新增方法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/12/19/es6-对象的新增方法/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/12/19/es6-对象的新增方法/" class="leancloud_visitors" data-flag-title="es6-对象的新增方法">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.9k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  8
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>这篇主要总结“es6标准入门”这本书的对象的扩展。<br>把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。</p>
+<a id="more"></a>
+<h2 id="Object-is"><a href="#Object-is" class="headerlink" title="Object.is()"></a>Object.is()</h2><p>ES5 比较两个值是否相等，只有两个运算符：相等运算符（<code>==</code>）和严格相等运算符（<code>===</code>）。它们都有缺点，前者会自动转换数据类型，后者的<code>NaN</code>不等于自身，以及<code>+0</code>等于<code>-0</code>。JavaScript 缺乏一种运算，在所有环境中，只要两个值是一样的，它们就应该相等。</p>
+<p>ES6 提出“Same-value equality”（同值相等）算法，用来解决这个问题。<code>Object.is</code>就是部署这个算法的新方法。它用来比较两个值是否严格相等，与严格比较运算符（<code>===</code>）的行为基本一致。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Object.is(&apos;foo&apos;, &apos;foo&apos;)</span><br><span class="line">// true</span><br><span class="line">Object.is(&#123;&#125;, &#123;&#125;)</span><br><span class="line">// false</span><br></pre></td></tr></table></figure>
+<p>不同之处只有两个：一是+0不等于-0，二是NaN等于自身。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">+0 === -0 //true</span><br><span class="line">NaN === NaN // false</span><br><span class="line"></span><br><span class="line">Object.is(+0, -0) // false</span><br><span class="line">Object.is(NaN, NaN) // true</span><br></pre></td></tr></table></figure>
+<h2 id="Object-assign"><a href="#Object-assign" class="headerlink" title="Object.assign()"></a>Object.assign()</h2><h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><p><code>Object.assign</code>方法用于对象的合并，将源对象（source）的所有可枚举属性，复制到目标对象（target）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">const target = &#123; a: 1 &#125;;</span><br><span class="line"></span><br><span class="line">const source1 = &#123; b: 2 &#125;;</span><br><span class="line">const source2 = &#123; c: 3 &#125;;</span><br><span class="line"></span><br><span class="line">Object.assign(target, source1, source2);</span><br><span class="line">target // &#123;a:1, b:2, c:3&#125;</span><br></pre></td></tr></table></figure>
+<p><code>Object.assign</code>方法的第一个参数是目标对象，后面的参数都是源对象。</p>
+<p>注意，如果目标对象与源对象有同名属性，或多个源对象有同名属性，则后面的属性会覆盖前面的属性。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">const target = &#123; a: 1, b: 1 &#125;;</span><br><span class="line"></span><br><span class="line">const source1 = &#123; b: 2, c: 2 &#125;;</span><br><span class="line">const source2 = &#123; c: 3 &#125;;</span><br><span class="line"></span><br><span class="line">Object.assign(target, source1, source2);</span><br><span class="line">target // &#123;a:1, b:2, c:3&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h3><h4 id="浅拷贝"><a href="#浅拷贝" class="headerlink" title="浅拷贝"></a>浅拷贝</h4><p><code>Object.assign</code>方法实行的是浅拷贝，而不是深拷贝。也就是说，如果源对象某个属性的值是对象，那么目标对象拷贝得到的是这个对象的引用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const obj1 = &#123;a: &#123;b: 1&#125;&#125;;</span><br><span class="line">const obj2 = Object.assign(&#123;&#125;, obj1);</span><br><span class="line"></span><br><span class="line">obj1.a.b = 2;</span><br><span class="line">obj2.a.b // 2</span><br></pre></td></tr></table></figure>
+<h4 id="同名属性的替换"><a href="#同名属性的替换" class="headerlink" title="同名属性的替换"></a>同名属性的替换</h4><p>对于这种嵌套的对象，一旦遇到同名属性，<code>Object.assign</code>的处理方法是替换，而不是添加。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const target = &#123; a: &#123; b: &apos;c&apos;, d: &apos;e&apos; &#125; &#125;</span><br><span class="line">const source = &#123; a: &#123; b: &apos;hello&apos; &#125; &#125;</span><br><span class="line">Object.assign(target, source)</span><br><span class="line">// &#123; a: &#123; b: &apos;hello&apos; &#125; &#125;</span><br></pre></td></tr></table></figure>
+<h4 id="数组的处理"><a href="#数组的处理" class="headerlink" title="数组的处理"></a>数组的处理</h4><p><code>Object.assign</code>可以用来处理数组，但是会把数组视为对象。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Object.assign([1, 2, 3], [4, 5])</span><br><span class="line">// [4, 5, 3]</span><br></pre></td></tr></table></figure>
+<h4 id="取值函数的处理"><a href="#取值函数的处理" class="headerlink" title="取值函数的处理"></a>取值函数的处理</h4><p><code>Object.assign</code>只能进行值的复制，如果要复制的值是一个取值函数，那么将求值后再复制。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">onst source = &#123;</span><br><span class="line">  get foo() &#123; return 1 &#125;</span><br><span class="line">&#125;;</span><br><span class="line">const target = &#123;&#125;;</span><br><span class="line"></span><br><span class="line">Object.assign(target, source)</span><br><span class="line">// &#123; foo: 1 &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="常见用途"><a href="#常见用途" class="headerlink" title="常见用途"></a>常见用途</h3><h4 id="为对象添加属性"><a href="#为对象添加属性" class="headerlink" title="为对象添加属性"></a>为对象添加属性</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class Point &#123;</span><br><span class="line">  constructor(x, y) &#123;</span><br><span class="line">    Object.assign(this, &#123;x, y&#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="为对象添加方法"><a href="#为对象添加方法" class="headerlink" title="为对象添加方法"></a>为对象添加方法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">Object.assign(SomeClass.prototype, &#123;</span><br><span class="line">  someMethod(arg1, arg2) &#123;</span><br><span class="line">    ···</span><br><span class="line">  &#125;,</span><br><span class="line">  anotherMethod() &#123;</span><br><span class="line">    ···</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">// 等同于下面的写法</span><br><span class="line">SomeClass.prototype.someMethod = function (arg1, arg2) &#123;</span><br><span class="line">  ···</span><br><span class="line">&#125;;</span><br><span class="line">SomeClass.prototype.anotherMethod = function () &#123;</span><br><span class="line">  ···</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h4 id="克隆对象"><a href="#克隆对象" class="headerlink" title="克隆对象"></a>克隆对象</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function clone(origin) &#123;</span><br><span class="line">  return Object.assign(&#123;&#125;, origin);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>不过，采用这种方法克隆，只能克隆原始对象自身的值，不能克隆它继承的值。如果想要保持继承链，可以采用下面的代码。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function clone(origin) &#123;</span><br><span class="line">  let originProto = Object.getPrototypeOf(origin);</span><br><span class="line">  return Object.assign(Object.create(originProto), origin);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="合并多个对象"><a href="#合并多个对象" class="headerlink" title="合并多个对象"></a>合并多个对象</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const merge =</span><br><span class="line">  (target, ...sources) =&gt; Object.assign(target, ...sources);</span><br></pre></td></tr></table></figure>
+<p>如果希望合并后返回一个新对象，可以改写上面函数，对一个空对象合并。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const merge =</span><br><span class="line">  (...sources) =&gt; Object.assign(&#123;&#125;, ...sources);</span><br></pre></td></tr></table></figure>
+<h4 id="为属性指定默认值"><a href="#为属性指定默认值" class="headerlink" title="为属性指定默认值"></a>为属性指定默认值</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">const DEFAULTS = &#123;</span><br><span class="line">  logLevel: 0,</span><br><span class="line">  outputFormat: &apos;html&apos;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">function processContent(options) &#123;</span><br><span class="line">  options = Object.assign(&#123;&#125;, DEFAULTS, options);</span><br><span class="line">  console.log(options);</span><br><span class="line">  // ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Object-getOwnPropertyDescriptors"><a href="#Object-getOwnPropertyDescriptors" class="headerlink" title="Object.getOwnPropertyDescriptors()"></a>Object.getOwnPropertyDescriptors()</h2><p>ES5 的<code>Object.getOwnPropertyDescriptor()</code>方法会返回某个对象属性的描述对象（descriptor）。ES2017 引入了<code>Object.getOwnPropertyDescriptors()</code>方法，返回指定对象所有自身属性（非继承属性）的描述对象。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">const obj = &#123;</span><br><span class="line">  foo: 123,</span><br><span class="line">  get bar() &#123; return &apos;abc&apos; &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Object.getOwnPropertyDescriptors(obj)</span><br><span class="line">// &#123; foo:</span><br><span class="line">//    &#123; value: 123,</span><br><span class="line">//      writable: true,</span><br><span class="line">//      enumerable: true,</span><br><span class="line">//      configurable: true &#125;,</span><br><span class="line">//   bar:</span><br><span class="line">//    &#123; get: [Function: get bar],</span><br><span class="line">//      set: undefined,</span><br><span class="line">//      enumerable: true,</span><br><span class="line">//      configurable: true &#125; &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="proto属性，Object-setPrototypeOf-，Object-getPrototypeOf"><a href="#proto属性，Object-setPrototypeOf-，Object-getPrototypeOf" class="headerlink" title="proto属性，Object.setPrototypeOf()，Object.getPrototypeOf()"></a><strong>proto</strong>属性，Object.setPrototypeOf()，Object.getPrototypeOf()</h2><p>JavaScript 语言的对象继承是通过原型链实现的。ES6 提供了更多原型对象的操作方法。</p>
+<h3 id="proto属性"><a href="#proto属性" class="headerlink" title="proto属性"></a><strong>proto</strong>属性</h3><p><strong>proto</strong>属性（前后各两个下划线），用来读取或设置当前对象的<code>prototype</code>对象。目前，所有浏览器（包括 IE11）都部署了这个属性。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// es5 的写法</span><br><span class="line">const obj = &#123;</span><br><span class="line">  method: function() &#123; ... &#125;</span><br><span class="line">&#125;;</span><br><span class="line">obj.__proto__ = someOtherObj;</span><br><span class="line"></span><br><span class="line">// es6 的写法</span><br><span class="line">var obj = Object.create(someOtherObj);</span><br><span class="line">obj.method = function() &#123; ... &#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="Object-setPrototypeOf"><a href="#Object-setPrototypeOf" class="headerlink" title="Object.setPrototypeOf()"></a>Object.setPrototypeOf()</h3><p><code>Object.setPrototypeOf</code>方法的作用与<code>__proto__</code>相同，用来设置一个对象的<code>prototype</code>对象，返回参数对象本身。它是 ES6 正式推荐的设置原型对象的方法。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 格式</span><br><span class="line">Object.setPrototypeOf(object, prototype)</span><br><span class="line"></span><br><span class="line">// 用法</span><br><span class="line">const o = Object.setPrototypeOf(&#123;&#125;, null);</span><br></pre></td></tr></table></figure>
+<p>该方法等同于下面的函数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function setPrototypeOf(obj, proto) &#123;</span><br><span class="line">  obj.__proto__ = proto;</span><br><span class="line">  return obj;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>下面是一个例子。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">let proto = &#123;&#125;;</span><br><span class="line">let obj = &#123; x: 10 &#125;;</span><br><span class="line">Object.setPrototypeOf(obj, proto);</span><br><span class="line"></span><br><span class="line">proto.y = 20;</span><br><span class="line">proto.z = 40;</span><br><span class="line"></span><br><span class="line">obj.x // 10</span><br><span class="line">obj.y // 20</span><br><span class="line">obj.z // 40</span><br></pre></td></tr></table></figure>
+<h3 id="Object-getPrototypeOf"><a href="#Object-getPrototypeOf" class="headerlink" title="Object.getPrototypeOf()"></a>Object.getPrototypeOf()</h3><p>该方法与<code>Object.setPrototypeOf</code>方法配套，用于读取一个对象的原型对象。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Object.getPrototypeOf(obj);</span><br></pre></td></tr></table></figure>
+<p>下面是一个例子。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function Rectangle() &#123;</span><br><span class="line">  // ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const rec = new Rectangle();</span><br><span class="line"></span><br><span class="line">Object.getPrototypeOf(rec) === Rectangle.prototype</span><br><span class="line">// true</span><br><span class="line"></span><br><span class="line">Object.setPrototypeOf(rec, Object.prototype);</span><br><span class="line">Object.getPrototypeOf(rec) === Rectangle.prototype</span><br><span class="line">// false</span><br></pre></td></tr></table></figure>
+<h2 id="Object-keys-，Object-values-，Object-entries"><a href="#Object-keys-，Object-values-，Object-entries" class="headerlink" title="Object.keys()，Object.values()，Object.entries()"></a>Object.keys()，Object.values()，Object.entries()</h2><h3 id="Object-keys"><a href="#Object-keys" class="headerlink" title="Object.keys()"></a>Object.keys()</h3><p>ES2017 引入了跟<code>Object.keys</code>配套的<code>Object.values</code>和<code>Object.entries</code>，作为遍历一个对象的补充手段，供<code>for...of</code>循环使用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">let &#123;keys, values, entries&#125; = Object;</span><br><span class="line">let obj = &#123; a: 1, b: 2, c: 3 &#125;;</span><br><span class="line"></span><br><span class="line">for (let key of keys(obj)) &#123;</span><br><span class="line">  console.log(key); // &apos;a&apos;, &apos;b&apos;, &apos;c&apos;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">for (let value of values(obj)) &#123;</span><br><span class="line">  console.log(value); // 1, 2, 3</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">for (let [key, value] of entries(obj)) &#123;</span><br><span class="line">  console.log([key, value]); // [&apos;a&apos;, 1], [&apos;b&apos;, 2], [&apos;c&apos;, 3]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Object-values"><a href="#Object-values" class="headerlink" title="Object.values()"></a>Object.values()</h3><p><code>Object.values</code>方法返回一个数组，成员是参数对象自身的（不含继承的）所有可遍历（<code>enumerable</code>）属性的键值。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const obj = &#123; foo: &apos;bar&apos;, baz: 42 &#125;;</span><br><span class="line">Object.values(obj)</span><br><span class="line">// [&quot;bar&quot;, 42]</span><br></pre></td></tr></table></figure>
+<p>返回数组的成员顺序，与本章的《属性的遍历》部分介绍的排列规则一致。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const obj = &#123; 100: &apos;a&apos;, 2: &apos;b&apos;, 7: &apos;c&apos; &#125;;</span><br><span class="line">Object.values(obj)</span><br><span class="line">// [&quot;b&quot;, &quot;c&quot;, &quot;a&quot;]</span><br></pre></td></tr></table></figure>
+<h3 id="Object-entries"><a href="#Object-entries" class="headerlink" title="Object.entries()"></a>Object.entries()</h3><p><code>Object.entries()</code>方法返回一个数组，成员是参数对象自身的（不含继承的）所有可遍历（<code>enumerable</code>）属性的键值对数组。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const obj = &#123; foo: &apos;bar&apos;, baz: 42 &#125;;</span><br><span class="line">Object.entries(obj)</span><br><span class="line">// [ [&quot;foo&quot;, &quot;bar&quot;], [&quot;baz&quot;, 42] ]</span><br></pre></td></tr></table></figure>
+<p><code>Object.entries</code>的基本用途是遍历对象的属性。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">let obj = &#123; one: 1, two: 2 &#125;;</span><br><span class="line">for (let [k, v] of Object.entries(obj)) &#123;</span><br><span class="line">  console.log(</span><br><span class="line">    `$&#123;JSON.stringify(k)&#125;: $&#123;JSON.stringify(v)&#125;`</span><br><span class="line">  );</span><br><span class="line">&#125;</span><br><span class="line">// &quot;one&quot;: 1</span><br><span class="line">// &quot;two&quot;: 2</span><br></pre></td></tr></table></figure>
+<p><code>Object.entries</code>方法的另一个用处是，将对象转为真正的<code>Map</code>结构。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const obj = &#123; foo: &apos;bar&apos;, baz: 42 &#125;;</span><br><span class="line">const map = new Map(Object.entries(obj));</span><br><span class="line">map // Map &#123; foo: &quot;bar&quot;, baz: 42 &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Object-fromEntries"><a href="#Object-fromEntries" class="headerlink" title="Object.fromEntries()"></a>Object.fromEntries()</h2><p><code>Object.fromEntries()</code>方法是<code>Object.entries()</code>的逆操作，用于将一个键值对数组转为对象。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Object.fromEntries([</span><br><span class="line">  [&apos;foo&apos;, &apos;bar&apos;],</span><br><span class="line">  [&apos;baz&apos;, 42]</span><br><span class="line">])</span><br><span class="line">// &#123; foo: &quot;bar&quot;, baz: 42 &#125;</span><br></pre></td></tr></table></figure>
+<p>该方法的主要目的，是将键值对的数据结构还原为对象，因此特别适合将 <code>Map</code> 结构转为对象。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// 例一</span><br><span class="line">const entries = new Map([</span><br><span class="line">  [&apos;foo&apos;, &apos;bar&apos;],</span><br><span class="line">  [&apos;baz&apos;, 42]</span><br><span class="line">]);</span><br><span class="line"></span><br><span class="line">Object.fromEntries(entries)</span><br><span class="line">// &#123; foo: &quot;bar&quot;, baz: 42 &#125;</span><br><span class="line"></span><br><span class="line">// 例二</span><br><span class="line">const map = new Map().set(&apos;foo&apos;, true).set(&apos;bar&apos;, false);</span><br><span class="line">Object.fromEntries(map)</span><br><span class="line">// &#123; foo: true, bar: false &#125;</span><br></pre></td></tr></table></figure>
+<p>该方法的一个用处是配合<code>URLSearchParams</code>对象，将查询字符串转为对象。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Object.fromEntries(new URLSearchParams(&apos;foo=bar&amp;baz=qux&apos;))</span><br><span class="line">// &#123; foo: &quot;bar&quot;, baz: &quot;qux&quot; &#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+            <a href="/tags/es6/" rel="tag"># es6</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/19/es6-对象的扩展/" rel="next" title="es6-对象的扩展">
+                <i class="fa fa-chevron-left"></i> es6-对象的扩展
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/uploads/avatar.png" alt="zhengshikun">
+            
+              <p class="site-author-name" itemprop="name">zhengshikun</p>
+              <p class="site-description motion-element" itemprop="description">什么是对的，有谁承认，有谁允许，有谁背负？</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/zhengshikun" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:646537311@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/3922341463?topnav=1&wvr=6&topsug=1" target="_blank" title="微博">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://baidu.com/" title="百度" target="_blank">百度</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          <div id="music163player">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&id=27583241&auto=1&height=32"></iframe>
+</div>
+
+
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Object-is"><span class="nav-number">1.</span> <span class="nav-text">Object.is()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Object-assign"><span class="nav-number">2.</span> <span class="nav-text">Object.assign()</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本用法"><span class="nav-number">2.1.</span> <span class="nav-text">基本用法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意点"><span class="nav-number">2.2.</span> <span class="nav-text">注意点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#浅拷贝"><span class="nav-number">2.2.1.</span> <span class="nav-text">浅拷贝</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#同名属性的替换"><span class="nav-number">2.2.2.</span> <span class="nav-text">同名属性的替换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数组的处理"><span class="nav-number">2.2.3.</span> <span class="nav-text">数组的处理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#取值函数的处理"><span class="nav-number">2.2.4.</span> <span class="nav-text">取值函数的处理</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见用途"><span class="nav-number">2.3.</span> <span class="nav-text">常见用途</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#为对象添加属性"><span class="nav-number">2.3.1.</span> <span class="nav-text">为对象添加属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#为对象添加方法"><span class="nav-number">2.3.2.</span> <span class="nav-text">为对象添加方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#克隆对象"><span class="nav-number">2.3.3.</span> <span class="nav-text">克隆对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#合并多个对象"><span class="nav-number">2.3.4.</span> <span class="nav-text">合并多个对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#为属性指定默认值"><span class="nav-number">2.3.5.</span> <span class="nav-text">为属性指定默认值</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Object-getOwnPropertyDescriptors"><span class="nav-number">3.</span> <span class="nav-text">Object.getOwnPropertyDescriptors()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#proto属性，Object-setPrototypeOf-，Object-getPrototypeOf"><span class="nav-number">4.</span> <span class="nav-text">proto属性，Object.setPrototypeOf()，Object.getPrototypeOf()</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#proto属性"><span class="nav-number">4.1.</span> <span class="nav-text">proto属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Object-setPrototypeOf"><span class="nav-number">4.2.</span> <span class="nav-text">Object.setPrototypeOf()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Object-getPrototypeOf"><span class="nav-number">4.3.</span> <span class="nav-text">Object.getPrototypeOf()</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Object-keys-，Object-values-，Object-entries"><span class="nav-number">5.</span> <span class="nav-text">Object.keys()，Object.values()，Object.entries()</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Object-keys"><span class="nav-number">5.1.</span> <span class="nav-text">Object.keys()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Object-values"><span class="nav-number">5.2.</span> <span class="nav-text">Object.values()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Object-entries"><span class="nav-number">5.3.</span> <span class="nav-text">Object.entries()</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Object-fromEntries"><span class="nav-number">6.</span> <span class="nav-text">Object.fromEntries()</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-snowflake-o"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zhengshikun</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">39.5k</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://zhengshikun.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://zhengshikun.site/2018/12/19/es6-对象的新增方法/';
+          this.page.identifier = '2018/12/19/es6-对象的新增方法/';
+          this.page.title = 'es6-对象的新增方法';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://zhengshikun.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("YtvbQHEdcEyyWNIvvF1aj85X-gzGzoHsz", "A0iy9s6o1SLDK1YBzpMI9IYx");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
