@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhengshikun.site/"/>
-  <updated>2018-12-20T07:58:06.242Z</updated>
+  <updated>2018-12-21T06:20:20.580Z</updated>
   <id>http://zhengshikun.site/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>es6-Proxy</title>
+    <link href="http://zhengshikun.site/2018/12/21/es6-Proxy/"/>
+    <id>http://zhengshikun.site/2018/12/21/es6-Proxy/</id>
+    <published>2018-12-21T04:59:07.000Z</published>
+    <updated>2018-12-21T06:20:20.580Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这篇主要总结“es6标准入门”这本书的Proxy。&lt;br&gt;把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://zhengshikun.site/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="js" scheme="http://zhengshikun.site/tags/js/"/>
+    
+      <category term="es6" scheme="http://zhengshikun.site/tags/es6/"/>
+    
+  </entry>
   
   <entry>
     <title>es6-Set和Map数据结构</title>
@@ -437,28 +459,6 @@
     
     
       <category term="git" scheme="http://zhengshikun.site/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo+next主题优化</title>
-    <link href="http://zhengshikun.site/2018/12/10/hexo-next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/"/>
-    <id>http://zhengshikun.site/2018/12/10/hexo-next主题优化/</id>
-    <published>2018-12-10T06:05:23.000Z</published>
-    <updated>2018-12-11T06:12:52.438Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;hexo官方提供的主题实在是不怎么美观，所以开发人员就制作了第三方主题，当然主题有很多，而今天我说的next主题。&lt;br&gt;关于hexo的搭建可以去&lt;strong&gt;&lt;a href=&quot;https://hexo.io/zh-cn/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官方文档&lt;/a&gt;&lt;/strong&gt;，很全面，按步骤走一遍基本就会用了。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="学习笔记" scheme="http://zhengshikun.site/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="hexo" scheme="http://zhengshikun.site/tags/hexo/"/>
-    
-      <category term="next" scheme="http://zhengshikun.site/tags/next/"/>
     
   </entry>
   
