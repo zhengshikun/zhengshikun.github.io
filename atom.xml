@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhengshikun.site/"/>
-  <updated>2018-12-21T06:20:20.580Z</updated>
+  <updated>2018-12-22T06:11:00.831Z</updated>
   <id>http://zhengshikun.site/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>es6-Reflect</title>
+    <link href="http://zhengshikun.site/2018/12/22/es6-Reflect/"/>
+    <id>http://zhengshikun.site/2018/12/22/es6-Reflect/</id>
+    <published>2018-12-22T05:41:01.000Z</published>
+    <updated>2018-12-22T06:11:00.831Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这篇主要总结“es6标准入门”这本书的Reflect。&lt;br&gt;把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://zhengshikun.site/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="js" scheme="http://zhengshikun.site/tags/js/"/>
+    
+      <category term="es6" scheme="http://zhengshikun.site/tags/es6/"/>
+    
+  </entry>
   
   <entry>
     <title>es6-Proxy</title>
@@ -439,26 +461,6 @@
       <category term="js" scheme="http://zhengshikun.site/tags/js/"/>
     
       <category term="Ajax" scheme="http://zhengshikun.site/tags/Ajax/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git的常用命令</title>
-    <link href="http://zhengshikun.site/2018/12/11/git%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>http://zhengshikun.site/2018/12/11/git的常用命令/</id>
-    <published>2018-12-11T06:14:06.000Z</published>
-    <updated>2018-12-11T06:43:20.480Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。&lt;br&gt;Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。&lt;br&gt;Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="常用工具" scheme="http://zhengshikun.site/categories/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="git" scheme="http://zhengshikun.site/tags/git/"/>
     
   </entry>
   

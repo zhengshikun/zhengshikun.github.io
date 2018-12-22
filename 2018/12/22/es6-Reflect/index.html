@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="js,webpack,配置,">
+  <meta name="keywords" content="js,es6,">
 
 
 
@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="本质上，webpack 是一个现代 JavaScript 应用程序的静态模块打包器(module bundler)。当 webpack 处理应用程序时，它会递归地构建一个依赖关系图(dependency graph)，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个 bundle。">
-<meta name="keywords" content="js,webpack,配置">
+<meta name="description" content="这篇主要总结“es6标准入门”这本书的Reflect。把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。">
+<meta name="keywords" content="js,es6">
 <meta property="og:type" content="article">
-<meta property="og:title" content="webpack4-简单配置">
-<meta property="og:url" content="http://zhengshikun.site/2018/12/18/webpack4-简单配置/index.html">
+<meta property="og:title" content="es6-Reflect">
+<meta property="og:url" content="http://zhengshikun.site/2018/12/22/es6-Reflect/index.html">
 <meta property="og:site_name" content="骑着毛驴的boy">
-<meta property="og:description" content="本质上，webpack 是一个现代 JavaScript 应用程序的静态模块打包器(module bundler)。当 webpack 处理应用程序时，它会递归地构建一个依赖关系图(dependency graph)，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个 bundle。">
+<meta property="og:description" content="这篇主要总结“es6标准入门”这本书的Reflect。把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-18T07:59:16.979Z">
+<meta property="og:updated_time" content="2018-12-22T06:11:00.831Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="webpack4-简单配置">
-<meta name="twitter:description" content="本质上，webpack 是一个现代 JavaScript 应用程序的静态模块打包器(module bundler)。当 webpack 处理应用程序时，它会递归地构建一个依赖关系图(dependency graph)，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个 bundle。">
+<meta name="twitter:title" content="es6-Reflect">
+<meta name="twitter:description" content="这篇主要总结“es6标准入门”这本书的Reflect。把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。">
 
 
 
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://zhengshikun.site/2018/12/18/webpack4-简单配置/">
+  <link rel="canonical" href="http://zhengshikun.site/2018/12/22/es6-Reflect/">
 
 
 
 
 
-  <title>webpack4-简单配置 | 骑着毛驴的boy</title>
+  <title>es6-Reflect | 骑着毛驴的boy</title>
   
 
 
@@ -314,7 +314,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zhengshikun.site/2018/12/18/webpack4-简单配置/">
+    <link itemprop="mainEntityOfPage" href="http://zhengshikun.site/2018/12/22/es6-Reflect/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhengshikun">
@@ -331,7 +331,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">webpack4-简单配置</h1>
+          <h1 class="post-title" itemprop="name headline">es6-Reflect</h1>
         
 
         <div class="post-meta">
@@ -343,8 +343,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-18T15:28:08+08:00">
-                2018-12-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-22T13:41:01+08:00">
+                2018-12-22
               </time>
             
 
@@ -366,8 +366,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/常用工具/" itemprop="url" rel="index">
-                    <span itemprop="name">常用工具</span>
+                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
                   </a>
                 </span>
 
@@ -384,8 +384,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/12/18/webpack4-简单配置/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/12/18/webpack4-简单配置/" itemprop="commentCount"></span>
+                <a href="/2018/12/22/es6-Reflect/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/12/22/es6-Reflect/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -393,7 +393,7 @@
 
           
           
-             <span id="/2018/12/18/webpack4-简单配置/" class="leancloud_visitors" data-flag-title="webpack4-简单配置">
+             <span id="/2018/12/22/es6-Reflect/" class="leancloud_visitors" data-flag-title="es6-Reflect">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -418,7 +418,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.7k
+                  1.6k
                 </span>
               
 
@@ -455,54 +455,70 @@
       
 
       
-        <p>本质上，<code>webpack</code> 是一个现代 JavaScript 应用程序的静态模块打包器(module bundler)。当 <code>webpack</code> 处理应用程序时，它会递归地构建一个依赖关系图(dependency graph)，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个 <code>bundle</code>。</p>
+        <p>这篇主要总结“es6标准入门”这本书的Reflect。<br>把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。</p>
 <a id="more"></a>
-<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><h3 id="入口-entry"><a href="#入口-entry" class="headerlink" title="入口(entry)"></a>入口(entry)</h3><p>入口起点(entry point)指示 webpack 应该使用哪个模块，来作为构建其内部依赖图的开始。进入入口起点后，webpack 会找出有哪些模块和库是入口起点（直接和间接）依赖的。</p>
-<p>每个依赖项随即被处理，最后输出到称之为 bundles 的文件中，我们将在下一章节详细讨论这个过程。</p>
-<p>可以通过在 webpack 配置中配置 entry 属性，来指定一个入口起点（或多个入口起点）。默认值为 ./src。</p>
-<p>接下来我们看一个 entry 配置的最简单例子：</p>
-<p><strong>webpack.config.js</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  entry: &apos;./path/to/my/entry/file.js&apos;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h3 id="出口-output"><a href="#出口-output" class="headerlink" title="出口(output)"></a>出口(output)</h3><p><code>output</code> 属性告诉 webpack 在哪里输出它所创建的 <code>bundles</code>，以及如何命名这些文件，默认值为 <code>./dist</code>。基本上，整个应用程序结构，都会被编译到你指定的输出路径的文件夹中。你可以通过在配置中指定一个 <code>output</code> 字段，来配置这些处理过程：</p>
-<p><strong>webpack.config.js</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const path = require(&apos;path&apos;);</span><br><span class="line"></span><br><span class="line">module.exports = &#123;</span><br><span class="line">  entry: &apos;./path/to/my/entry/file.js&apos;,</span><br><span class="line">  output: &#123;</span><br><span class="line">    path: path.resolve(__dirname, &apos;dist&apos;),</span><br><span class="line">    filename: &apos;my-first-webpack.bundle.js&apos;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>在上面的示例中，我们通过 <code>output.filename</code> 和 <code>output.path</code> 属性，来告诉 <code>webpack bundle</code> 的名称，以及我们想要 <code>bundle</code> 生成(emit)到哪里。可能你想要了解在代码最上面导入的 <code>path</code> 模块是什么，它是一个 <code>Node.js 核心模块</code>，用于操作文件路径。</p>
-<h3 id="loader"><a href="#loader" class="headerlink" title="loader"></a>loader</h3><p><code>loader</code> 让 webpack 能够去处理那些非 JavaScript 文件（webpack 自身只理解 JavaScript）。<code>loader</code> 可以将所有类型的文件转换为 webpack 能够处理的有效模块，然后你就可以利用 webpack 的打包能力，对它们进行处理。</p>
-<p>本质上，<code>webpack loader</code> 将所有类型的文件，转换为应用程序的依赖图（和最终的 bundle）可以直接引用的模块。</p>
-<p>在更高层面，在 webpack 的配置中 loader 有两个目标：</p>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p><code>Reflect</code>对象与<code>Proxy</code>对象一样，也是 ES6 为了操作对象而提供的新 <code>API</code>。Reflect对象的设计目的有这样几个。</p>
 <ol>
-<li><code>test</code> 属性，用于标识出应该被对应的 loader 进行转换的某个或某些文件。</li>
-<li><code>use</code> 属性，表示进行转换时，应该使用哪个 loader。</li>
+<li>将Object对象的一些明显属于语言内部的方法（比如<code>Object.defineProperty</code>），放到<code>Reflect</code>对象上。</li>
+<li>修改某些Object方法的返回结果，让其变得更合理。</li>
+<li>让Object操作都变成函数行为。</li>
+<li>Reflect对象的方法与Proxy对象的方法一一对应，只要是Proxy对象的方法，就能在Reflect对象上找到对应的方法。</li>
 </ol>
-<p><strong>webpack.config.js</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">const path = require(&apos;path&apos;);</span><br><span class="line"></span><br><span class="line">const config = &#123;</span><br><span class="line">  output: &#123;</span><br><span class="line">    filename: &apos;my-first-webpack.bundle.js&apos;</span><br><span class="line">  &#125;,</span><br><span class="line">  module: &#123;</span><br><span class="line">    rules: [</span><br><span class="line">      &#123; test: /\.txt$/, use: &apos;raw-loader&apos; &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">module.exports = config;</span><br></pre></td></tr></table></figure>
-<p>以上配置中，对一个单独的 module 对象定义了 rules 属性，里面包含两个必须属性：test 和 use。这告诉 webpack 编译器(compiler) 如下信息：</p>
-<blockquote>
-<p>“嘿，webpack 编译器，当你碰到「在 <code>require()/import</code> 语句中被解析为 <code>&#39;.txt&#39;</code> 的路径」时，在你对它打包之前，先使用 <code>raw-loader</code> 转换一下。”</p>
-</blockquote>
-<h3 id="插件-plugins"><a href="#插件-plugins" class="headerlink" title="插件(plugins)"></a>插件(plugins)</h3><p>oader 被用于转换某些类型的模块，而插件则可以用于执行范围更广的任务。插件的范围包括，从打包优化和压缩，一直到重新定义环境中的变量。插件接口功能极其强大，可以用来处理各种各样的任务。</p>
-<p>想要使用一个插件，你只需要 require() 它，然后把它添加到 plugins 数组中。多数插件可以通过选项(option)自定义。你也可以在一个配置文件中因为不同目的而多次使用同一个插件，这时需要通过使用 new 操作符来创建它的一个实例。</p>
-<p><strong>webpack.config.js</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">const HtmlWebpackPlugin = require(&apos;html-webpack-plugin&apos;); // 通过 npm 安装</span><br><span class="line">const webpack = require(&apos;webpack&apos;); // 用于访问内置插件</span><br><span class="line"></span><br><span class="line">const config = &#123;</span><br><span class="line">  module: &#123;</span><br><span class="line">    rules: [</span><br><span class="line">      &#123; test: /\.txt$/, use: &apos;raw-loader&apos; &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  plugins: [</span><br><span class="line">    new HtmlWebpackPlugin(&#123;template: &apos;./src/index.html&apos;&#125;)</span><br><span class="line">  ]</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">module.exports = config;</span><br></pre></td></tr></table></figure>
-<h3 id="模式"><a href="#模式" class="headerlink" title="模式"></a>模式</h3><p>通过选择 development 或 production 之中的一个，来设置 mode 参数，你可以启用相应模式下的 webpack 内置的优化</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  mode: &apos;production&apos;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="基本安装"><a href="#基本安装" class="headerlink" title="基本安装"></a>基本安装</h3><p>首先我们创建一个目录，初始化 npm，然后 在本地安装 webpack，接着安装 webpack-cli（此工具用于在命令行中运行 webpack）：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir webpack-demo &amp;&amp; cd webpack-demo</span><br><span class="line">npm init -y</span><br><span class="line">npm install webpack webpack-cli --save-dev</span><br></pre></td></tr></table></figure>
-<p>现在我们将创建以下目录结构、文件和内容：</p>
-<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p><strong>project</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">webpack-demo</span><br><span class="line"> |- package.json</span><br><span class="line"> |- /src</span><br><span class="line">   |- index.js</span><br><span class="line"> |- webpack.common.js</span><br><span class="line"> |- webpack.dev.js</span><br><span class="line"> |- webpack.prod.js</span><br></pre></td></tr></table></figure>
-<h3 id="npm配置文件"><a href="#npm配置文件" class="headerlink" title="npm配置文件"></a>npm配置文件</h3><p><strong>package.json</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;name&quot;: &quot;webpack-demo&quot;,</span><br><span class="line">  &quot;sideEffects&quot;: false,</span><br><span class="line">  &quot;version&quot;: &quot;1.0.0&quot;,</span><br><span class="line">  &quot;description&quot;: &quot;&quot;,</span><br><span class="line">  &quot;private&quot;: true,</span><br><span class="line">  &quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;,</span><br><span class="line">    &quot;start&quot;: &quot;webpack-dev-server --open --config webpack.dev.js&quot;,</span><br><span class="line">    &quot;build&quot;: &quot;webpack --config webpack.prod.js&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;keywords&quot;: [],</span><br><span class="line">  &quot;author&quot;: &quot;&quot;,</span><br><span class="line">  &quot;license&quot;: &quot;ISC&quot;,</span><br><span class="line">  &quot;devDependencies&quot;: &#123;</span><br><span class="line">    &quot;clean-webpack-plugin&quot;: &quot;^1.0.0&quot;,</span><br><span class="line">    &quot;css-loader&quot;: &quot;^2.0.1&quot;,</span><br><span class="line">    &quot;csv-loader&quot;: &quot;^3.0.2&quot;,</span><br><span class="line">    &quot;express&quot;: &quot;^4.16.4&quot;,</span><br><span class="line">    &quot;file-loader&quot;: &quot;^2.0.0&quot;,</span><br><span class="line">    &quot;html-webpack-plugin&quot;: &quot;^3.2.0&quot;,</span><br><span class="line">    &quot;style-loader&quot;: &quot;^0.23.1&quot;,</span><br><span class="line">    &quot;uglifyjs-webpack-plugin&quot;: &quot;^2.0.1&quot;,</span><br><span class="line">    &quot;webpack&quot;: &quot;^4.27.1&quot;,</span><br><span class="line">    &quot;webpack-cli&quot;: &quot;^3.1.2&quot;,</span><br><span class="line">    &quot;webpack-dev-middleware&quot;: &quot;^3.4.0&quot;,</span><br><span class="line">    &quot;webpack-dev-server&quot;: &quot;^3.1.10&quot;,</span><br><span class="line">    &quot;webpack-merge&quot;: &quot;^4.1.5&quot;,</span><br><span class="line">    &quot;xml-loader&quot;: &quot;^1.2.1&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>请npm安装所有依赖</p>
-<h3 id="入口js文件"><a href="#入口js文件" class="headerlink" title="入口js文件"></a>入口js文件</h3><p><strong>src/index.js</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function component() &#123;</span><br><span class="line">  var element = document.createElement(&apos;pre&apos;);</span><br><span class="line"></span><br><span class="line">  element.innerHTML=[</span><br><span class="line">    &apos;Hello webpack!&apos;</span><br><span class="line">  ]</span><br><span class="line"></span><br><span class="line">  return element;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">document.body.appendChild(component());</span><br></pre></td></tr></table></figure>
-<h3 id="webpack公用配置文件"><a href="#webpack公用配置文件" class="headerlink" title="webpack公用配置文件"></a>webpack公用配置文件</h3><p><strong>webpack.common.js</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">const path = require(&apos;path&apos;);</span><br><span class="line">const CleanWebpackPlugin = require(&apos;clean-webpack-plugin&apos;);</span><br><span class="line">const HtmlWebpackPlugin = require(&apos;html-webpack-plugin&apos;);</span><br><span class="line"></span><br><span class="line">module.exports = &#123;</span><br><span class="line">  entry: &#123;</span><br><span class="line">    app: &apos;./src/index.js&apos;</span><br><span class="line">  &#125;,</span><br><span class="line">  module:&#123;</span><br><span class="line">    rules: [&#123;</span><br><span class="line">          test: /\.css$/,</span><br><span class="line">          use: [</span><br><span class="line">            &apos;style-loader&apos;,</span><br><span class="line">            &apos;css-loader&apos;</span><br><span class="line">          ]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          test: /\.(png|svg|jpg|gif)$/,</span><br><span class="line">          use: [</span><br><span class="line">            &apos;file-loader&apos;</span><br><span class="line">          ]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          test: /\.(woff|woff2|eot|ttf|otf)$/,</span><br><span class="line">          use: [</span><br><span class="line">            &apos;file-loader&apos;</span><br><span class="line">          ]</span><br><span class="line">        &#125;,</span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  plugins: [</span><br><span class="line">    new CleanWebpackPlugin([&apos;dist&apos;]),</span><br><span class="line">    new HtmlWebpackPlugin(&#123;</span><br><span class="line">      title: &apos;Production&apos;</span><br><span class="line">    &#125;),</span><br><span class="line">    </span><br><span class="line">  ],</span><br><span class="line">  output: &#123;</span><br><span class="line">    filename: &apos;[name].bundle.js&apos;,</span><br><span class="line">    path: path.resolve(__dirname, &apos;dist&apos;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="webpack开发环境配置文件"><a href="#webpack开发环境配置文件" class="headerlink" title="webpack开发环境配置文件"></a>webpack开发环境配置文件</h3><p><strong>webpack.dev.js</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">const merge = require(&apos;webpack-merge&apos;);</span><br><span class="line">const common = require(&apos;./webpack.common.js&apos;);</span><br><span class="line">const webpack = require(&apos;webpack&apos;);</span><br><span class="line"></span><br><span class="line">module.exports = merge(common,&#123;</span><br><span class="line">  devtool: &apos;inline-source-map&apos;,</span><br><span class="line">  devServer: &#123;</span><br><span class="line">    contentBase: &apos;./dist&apos;</span><br><span class="line">  &#125;,</span><br><span class="line">  plugins: [</span><br><span class="line">    new webpack.NamedModulesPlugin(),</span><br><span class="line">    new webpack.HotModuleReplacementPlugin()</span><br><span class="line">  ]</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h3 id="webpack生产环境配置文件"><a href="#webpack生产环境配置文件" class="headerlink" title="webpack生产环境配置文件"></a>webpack生产环境配置文件</h3><p><strong>webpack.prod.js</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">const webpack = require(&apos;webpack&apos;);</span><br><span class="line">const merge = require(&apos;webpack-merge&apos;);</span><br><span class="line">const UglifyJSPlugin = require(&apos;uglifyjs-webpack-plugin&apos;);</span><br><span class="line">const common = require(&apos;./webpack.common.js&apos;);</span><br><span class="line"></span><br><span class="line">module.exports = merge(common, &#123;</span><br><span class="line">  devtool: &apos;source-map&apos;,</span><br><span class="line">  plugins: [</span><br><span class="line">    new UglifyJSPlugin(&#123;</span><br><span class="line">      sourceMap: true</span><br><span class="line">    &#125;),</span><br><span class="line">    new webpack.DefinePlugin()</span><br><span class="line">  ]</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>没有安装<code>vue</code> <code>react</code>等前端框架，这里就大致的配置了下<code>webpack</code>。</p>
+<h2 id="静态方法"><a href="#静态方法" class="headerlink" title="静态方法"></a>静态方法</h2><p>Reflect对象一共有 13 个静态方法。</p>
+<ul>
+<li>Reflect.apply(target, thisArg, args)</li>
+<li>Reflect.construct(target, args)</li>
+<li>Reflect.get(target, name, receiver)</li>
+<li>Reflect.set(target, name, value, receiver)</li>
+<li>Reflect.defineProperty(target, name, desc)</li>
+<li>Reflect.deleteProperty(target, name)</li>
+<li>Reflect.has(target, name)</li>
+<li>Reflect.ownKeys(target)</li>
+<li>Reflect.isExtensible(target)</li>
+<li>Reflect.preventExtensions(target)</li>
+<li>Reflect.getOwnPropertyDescriptor(target, name)</li>
+<li>Reflect.getPrototypeOf(target)</li>
+<li>Reflect.setPrototypeOf(target, prototype)</li>
+</ul>
+<p>上面这些方法的作用，大部分与Object对象的同名方法的作用都是相同的，而且它与Proxy对象的方法是一一对应的。下面是对它们的解释。</p>
+<h3 id="Reflect-get-target-name-receiver"><a href="#Reflect-get-target-name-receiver" class="headerlink" title="Reflect.get(target, name, receiver)"></a>Reflect.get(target, name, receiver)</h3><p><code>Reflect.get</code>方法查找并返回<code>target</code>对象的<code>name</code>属性，如果没有该属性，则返回<code>undefined</code>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var myObject = &#123;</span><br><span class="line">  foo: 1,</span><br><span class="line">  bar: 2,</span><br><span class="line">  get baz() &#123;</span><br><span class="line">    return this.foo + this.bar;</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Reflect.get(myObject, &apos;foo&apos;) // 1</span><br><span class="line">Reflect.get(myObject, &apos;bar&apos;) // 2</span><br><span class="line">Reflect.get(myObject, &apos;baz&apos;) // 3</span><br></pre></td></tr></table></figure>
+<p>如果<code>name</code>属性部署了读取函数（getter），则读取函数的<code>this</code>绑定<code>receiver</code>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var myObject = &#123;</span><br><span class="line">  foo: 1,</span><br><span class="line">  bar: 2,</span><br><span class="line">  get baz() &#123;</span><br><span class="line">    return this.foo + this.bar;</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">var myReceiverObject = &#123;</span><br><span class="line">  foo: 4,</span><br><span class="line">  bar: 4,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Reflect.get(myObject, &apos;baz&apos;, myReceiverObject) // 8</span><br></pre></td></tr></table></figure>
+<h3 id="Reflect-set-target-name-value-receiver"><a href="#Reflect-set-target-name-value-receiver" class="headerlink" title="Reflect.set(target, name, value, receiver)"></a>Reflect.set(target, name, value, receiver)</h3><p><code>Reflect.set</code>方法设置<code>target</code>对象的<code>name</code>属性等于<code>value</code>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var myObject = &#123;</span><br><span class="line">  foo: 1,</span><br><span class="line">  set bar(value) &#123;</span><br><span class="line">    return this.foo = value;</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">myObject.foo // 1</span><br><span class="line"></span><br><span class="line">Reflect.set(myObject, &apos;foo&apos;, 2);</span><br><span class="line">myObject.foo // 2</span><br><span class="line"></span><br><span class="line">Reflect.set(myObject, &apos;bar&apos;, 3)</span><br><span class="line">myObject.foo // 3</span><br></pre></td></tr></table></figure>
+<p>如果<code>name</code>属性设置了赋值函数，则赋值函数的<code>this</code>绑定<code>receiver</code>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var myObject = &#123;</span><br><span class="line">  foo: 4,</span><br><span class="line">  set bar(value) &#123;</span><br><span class="line">    return this.foo = value;</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">var myReceiverObject = &#123;</span><br><span class="line">  foo: 0,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Reflect.set(myObject, &apos;bar&apos;, 1, myReceiverObject);</span><br><span class="line">myObject.foo // 4</span><br><span class="line">myReceiverObject.foo // 1</span><br></pre></td></tr></table></figure>
+<h3 id="Reflect-has-obj-name"><a href="#Reflect-has-obj-name" class="headerlink" title="Reflect.has(obj, name)"></a>Reflect.has(obj, name)</h3><p><code>Reflect.has</code>方法对应<code>name in obj</code>里面的<code>in</code>运算符。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var myObject = &#123;</span><br><span class="line">  foo: 1,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">// 旧写法</span><br><span class="line">&apos;foo&apos; in myObject // true</span><br><span class="line"></span><br><span class="line">// 新写法</span><br><span class="line">Reflect.has(myObject, &apos;foo&apos;) // true</span><br></pre></td></tr></table></figure>
+<h3 id="Reflect-deleteProperty-obj-name"><a href="#Reflect-deleteProperty-obj-name" class="headerlink" title="Reflect.deleteProperty(obj, name)"></a>Reflect.deleteProperty(obj, name)</h3><p><code>Reflect.deleteProperty</code>方法等同于<code>delete obj[name]</code>，用于删除对象的属性。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">const myObj = &#123; foo: &apos;bar&apos; &#125;;</span><br><span class="line"></span><br><span class="line">// 旧写法</span><br><span class="line">delete myObj.foo;</span><br><span class="line"></span><br><span class="line">// 新写法</span><br><span class="line">Reflect.deleteProperty(myObj, &apos;foo&apos;);</span><br></pre></td></tr></table></figure>
+<p>该方法返回一个布尔值。如果删除成功，或者被删除的属性不存在，返回<code>true</code>；删除失败，被删除的属性依然存在，返回<code>false</code>。</p>
+<h3 id="Reflect-construct-target-args"><a href="#Reflect-construct-target-args" class="headerlink" title="Reflect.construct(target, args)"></a>Reflect.construct(target, args)</h3><p><code>Reflect.construct</code>方法等同于<code>new target(...args)</code>，这提供了一种不使用<code>new</code>，来调用构造函数的方法。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function Greeting(name) &#123;</span><br><span class="line">  this.name = name;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// new 的写法</span><br><span class="line">const instance = new Greeting(&apos;张三&apos;);</span><br><span class="line"></span><br><span class="line">// Reflect.construct 的写法</span><br><span class="line">const instance = Reflect.construct(Greeting, [&apos;张三&apos;]);</span><br></pre></td></tr></table></figure>
+<h3 id="Reflect-getPrototypeOf-obj"><a href="#Reflect-getPrototypeOf-obj" class="headerlink" title="Reflect.getPrototypeOf(obj)"></a>Reflect.getPrototypeOf(obj)</h3><p><code>Reflect.getPrototypeOf</code>方法用于读取对象的<code>__proto__</code>属性，对应<code>Object.getPrototypeOf(obj)</code>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">const myObj = new FancyThing();</span><br><span class="line"></span><br><span class="line">// 旧写法</span><br><span class="line">Object.getPrototypeOf(myObj) === FancyThing.prototype;</span><br><span class="line"></span><br><span class="line">// 新写法</span><br><span class="line">Reflect.getPrototypeOf(myObj) === FancyThing.prototype;</span><br></pre></td></tr></table></figure>
+<h3 id="Reflect-setPrototypeOf-obj-newProto"><a href="#Reflect-setPrototypeOf-obj-newProto" class="headerlink" title="Reflect.setPrototypeOf(obj, newProto)"></a>Reflect.setPrototypeOf(obj, newProto)</h3><p><code>Reflect.setPrototypeOf</code>方法用于设置目标对象的原型（prototype），对应<code>Object.setPrototypeOf(obj, newProto)</code>方法。它返回一个布尔值，表示是否设置成功。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const myObj = &#123;&#125;;</span><br><span class="line"></span><br><span class="line">// 旧写法</span><br><span class="line">Object.setPrototypeOf(myObj, Array.prototype);</span><br><span class="line"></span><br><span class="line">// 新写法</span><br><span class="line">Reflect.setPrototypeOf(myObj, Array.prototype);</span><br><span class="line"></span><br><span class="line">myObj.length // 0</span><br></pre></td></tr></table></figure>
+<h3 id="Reflect-apply-func-thisArg-args"><a href="#Reflect-apply-func-thisArg-args" class="headerlink" title="Reflect.apply(func, thisArg, args)"></a>Reflect.apply(func, thisArg, args)</h3><p><code>Reflect.apply</code>方法等同于<code>Function.prototype.apply.call(func, thisArg, args)</code>，用于绑定<code>this</code>对象后执行给定函数。</p>
+<p>一般来说，如果要绑定一个函数的<code>this</code>对象，可以这样写<code>fn.apply(obj, args)</code>，但是如果函数定义了自己的<code>apply</code>方法，就只能写成<code>Function.prototype.apply.call(fn, obj, args)</code>，采用Reflect对象可以简化这种操作。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">const ages = [11, 33, 12, 54, 18, 96];</span><br><span class="line"></span><br><span class="line">// 旧写法</span><br><span class="line">const youngest = Math.min.apply(Math, ages);</span><br><span class="line">const oldest = Math.max.apply(Math, ages);</span><br><span class="line">const type = Object.prototype.toString.call(youngest);</span><br><span class="line"></span><br><span class="line">// 新写法</span><br><span class="line">const youngest = Reflect.apply(Math.min, Math, ages);</span><br><span class="line">const oldest = Reflect.apply(Math.max, Math, ages);</span><br><span class="line">const type = Reflect.apply(Object.prototype.toString, youngest, []);</span><br></pre></td></tr></table></figure>
+<h3 id="Reflect-defineProperty-target-propertyKey-attributes"><a href="#Reflect-defineProperty-target-propertyKey-attributes" class="headerlink" title="Reflect.defineProperty(target, propertyKey, attributes)"></a>Reflect.defineProperty(target, propertyKey, attributes)</h3><p><code>Reflect.defineProperty</code>方法基本等同于<code>Object.defineProperty</code>，用来为对象定义属性。未来，后者会被逐渐废除，请从现在开始就使用<code>Reflect.defineProperty</code>代替它。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function MyDate() &#123;</span><br><span class="line">  /*…*/</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 旧写法</span><br><span class="line">Object.defineProperty(MyDate, &apos;now&apos;, &#123;</span><br><span class="line">  value: () =&gt; Date.now()</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">// 新写法</span><br><span class="line">Reflect.defineProperty(MyDate, &apos;now&apos;, &#123;</span><br><span class="line">  value: () =&gt; Date.now()</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="Reflect-getOwnPropertyDescriptor-target-propertyKey"><a href="#Reflect-getOwnPropertyDescriptor-target-propertyKey" class="headerlink" title="Reflect.getOwnPropertyDescriptor(target, propertyKey)"></a>Reflect.getOwnPropertyDescriptor(target, propertyKey)</h3><p><code>Reflect.getOwnPropertyDescriptor</code>基本等同于<code>Object.getOwnPropertyDescriptor</code>，用于得到指定属性的描述对象，将来会替代掉后者。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var myObject = &#123;&#125;;</span><br><span class="line">Object.defineProperty(myObject, &apos;hidden&apos;, &#123;</span><br><span class="line">  value: true,</span><br><span class="line">  enumerable: false,</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">// 旧写法</span><br><span class="line">var theDescriptor = Object.getOwnPropertyDescriptor(myObject, &apos;hidden&apos;);</span><br><span class="line"></span><br><span class="line">// 新写法</span><br><span class="line">var theDescriptor = Reflect.getOwnPropertyDescriptor(myObject, &apos;hidden&apos;);</span><br></pre></td></tr></table></figure>
+<h3 id="Reflect-isExtensible-target"><a href="#Reflect-isExtensible-target" class="headerlink" title="Reflect.isExtensible (target)"></a>Reflect.isExtensible (target)</h3><p><code>Reflect.isExtensible</code>方法对应<code>Object.isExtensible</code>，返回一个布尔值，表示当前对象是否可扩展。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">const myObject = &#123;&#125;;</span><br><span class="line"></span><br><span class="line">// 旧写法</span><br><span class="line">Object.isExtensible(myObject) // true</span><br><span class="line"></span><br><span class="line">// 新写法</span><br><span class="line">Reflect.isExtensible(myObject) // true</span><br></pre></td></tr></table></figure>
+<h3 id="Reflect-preventExtensions-target"><a href="#Reflect-preventExtensions-target" class="headerlink" title="Reflect.preventExtensions(target)"></a>Reflect.preventExtensions(target)</h3><p><code>Reflect.preventExtensions</code>对应<code>Object.preventExtensions</code>方法，用于让一个对象变为不可扩展。它返回一个布尔值，表示是否操作成功。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var myObject = &#123;&#125;;</span><br><span class="line"></span><br><span class="line">// 旧写法</span><br><span class="line">Object.preventExtensions(myObject) // Object &#123;&#125;</span><br><span class="line"></span><br><span class="line">// 新写法</span><br><span class="line">Reflect.preventExtensions(myObject) // true</span><br></pre></td></tr></table></figure>
+<h3 id="Reflect-ownKeys-target"><a href="#Reflect-ownKeys-target" class="headerlink" title="Reflect.ownKeys (target)"></a>Reflect.ownKeys (target)</h3><p><code>Reflect.ownKeys</code>方法用于返回对象的所有属性，基本等同于<code>Object.getOwnPropertyNames</code>与<code>Object.getOwnPropertySymbols</code>之和。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">var myObject = &#123;</span><br><span class="line">  foo: 1,</span><br><span class="line">  bar: 2,</span><br><span class="line">  [Symbol.for(&apos;baz&apos;)]: 3,</span><br><span class="line">  [Symbol.for(&apos;bing&apos;)]: 4,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">// 旧写法</span><br><span class="line">Object.getOwnPropertyNames(myObject)</span><br><span class="line">// [&apos;foo&apos;, &apos;bar&apos;]</span><br><span class="line"></span><br><span class="line">Object.getOwnPropertySymbols(myObject)</span><br><span class="line">//[Symbol(baz), Symbol(bing)]</span><br><span class="line"></span><br><span class="line">// 新写法</span><br><span class="line">Reflect.ownKeys(myObject)</span><br><span class="line">// [&apos;foo&apos;, &apos;bar&apos;, Symbol(baz), Symbol(bing)]</span><br></pre></td></tr></table></figure>
+<h2 id="实例：使用-Proxy-实现观察者模式"><a href="#实例：使用-Proxy-实现观察者模式" class="headerlink" title="实例：使用 Proxy 实现观察者模式"></a>实例：使用 Proxy 实现观察者模式</h2><p>观察者模式（Observer mode）指的是函数自动观察数据对象，一旦对象有变化，函数就会自动执行。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">const person = observable(&#123;</span><br><span class="line">  name: &apos;张三&apos;,</span><br><span class="line">  age: 20</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">function print() &#123;</span><br><span class="line">  console.log(`$&#123;person.name&#125;, $&#123;person.age&#125;`)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">observe(print);</span><br><span class="line">person.name = &apos;李四&apos;;</span><br><span class="line">// 输出</span><br><span class="line">// 李四, 20</span><br></pre></td></tr></table></figure>
+<p>上面代码中，数据对象<code>person</code>是观察目标，函数<code>print</code>是观察者。一旦数据对象发生变化，<code>print</code>就会自动执行。</p>
+<p>下面，使用 Proxy 写一个观察者模式的最简单实现，即实现<code>observable</code>和<code>observe</code>这两个函数。思路是<code>observable</code>函数返回一个原始对象的 Proxy 代理，拦截赋值操作，触发充当观察者的各个函数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">const queuedObservers = new Set();</span><br><span class="line"></span><br><span class="line">const observe = fn =&gt; queuedObservers.add(fn);</span><br><span class="line">const observable = obj =&gt; new Proxy(obj, &#123;set&#125;);</span><br><span class="line"></span><br><span class="line">function set(target, key, value, receiver) &#123;</span><br><span class="line">  const result = Reflect.set(target, key, value, receiver);</span><br><span class="line">  queuedObservers.forEach(observer =&gt; observer());</span><br><span class="line">  return result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面代码中，先定义了一个<code>Set</code>集合，所有观察者函数都放进这个集合。然后，<code>observable</code>函数返回原始对象的代理，拦截赋值操作。拦截函数<code>set</code>之中，会自动执行所有观察者。</p>
 
       
     </div>
@@ -522,9 +538,7 @@
           
             <a href="/tags/js/" rel="tag"># js</a>
           
-            <a href="/tags/webpack/" rel="tag"># webpack</a>
-          
-            <a href="/tags/配置/" rel="tag"># 配置</a>
+            <a href="/tags/es6/" rel="tag"># es6</a>
           
         </div>
       
@@ -537,8 +551,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/18/es6-数组的扩展/" rel="next" title="es6-数组的扩展">
-                <i class="fa fa-chevron-left"></i> es6-数组的扩展
+              <a href="/2018/12/21/es6-Proxy/" rel="next" title="es6-Proxy">
+                <i class="fa fa-chevron-left"></i> es6-Proxy
               </a>
             
           </div>
@@ -546,10 +560,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/19/es6-对象的扩展/" rel="prev" title="es6-对象的扩展">
-                es6-对象的扩展 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -740,7 +750,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概念"><span class="nav-number">1.</span> <span class="nav-text">概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#入口-entry"><span class="nav-number">1.1.</span> <span class="nav-text">入口(entry)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#出口-output"><span class="nav-number">1.2.</span> <span class="nav-text">出口(output)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#loader"><span class="nav-number">1.3.</span> <span class="nav-text">loader</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插件-plugins"><span class="nav-number">1.4.</span> <span class="nav-text">插件(plugins)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模式"><span class="nav-number">1.5.</span> <span class="nav-text">模式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置"><span class="nav-number">2.</span> <span class="nav-text">配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本安装"><span class="nav-number">2.1.</span> <span class="nav-text">基本安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#目录"><span class="nav-number">2.2.</span> <span class="nav-text">目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#npm配置文件"><span class="nav-number">2.3.</span> <span class="nav-text">npm配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#入口js文件"><span class="nav-number">2.4.</span> <span class="nav-text">入口js文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#webpack公用配置文件"><span class="nav-number">2.5.</span> <span class="nav-text">webpack公用配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#webpack开发环境配置文件"><span class="nav-number">2.6.</span> <span class="nav-text">webpack开发环境配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#webpack生产环境配置文件"><span class="nav-number">2.7.</span> <span class="nav-text">webpack生产环境配置文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结尾"><span class="nav-number">3.</span> <span class="nav-text">结尾</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#静态方法"><span class="nav-number">2.</span> <span class="nav-text">静态方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Reflect-get-target-name-receiver"><span class="nav-number">2.1.</span> <span class="nav-text">Reflect.get(target, name, receiver)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reflect-set-target-name-value-receiver"><span class="nav-number">2.2.</span> <span class="nav-text">Reflect.set(target, name, value, receiver)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reflect-has-obj-name"><span class="nav-number">2.3.</span> <span class="nav-text">Reflect.has(obj, name)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reflect-deleteProperty-obj-name"><span class="nav-number">2.4.</span> <span class="nav-text">Reflect.deleteProperty(obj, name)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reflect-construct-target-args"><span class="nav-number">2.5.</span> <span class="nav-text">Reflect.construct(target, args)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reflect-getPrototypeOf-obj"><span class="nav-number">2.6.</span> <span class="nav-text">Reflect.getPrototypeOf(obj)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reflect-setPrototypeOf-obj-newProto"><span class="nav-number">2.7.</span> <span class="nav-text">Reflect.setPrototypeOf(obj, newProto)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reflect-apply-func-thisArg-args"><span class="nav-number">2.8.</span> <span class="nav-text">Reflect.apply(func, thisArg, args)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reflect-defineProperty-target-propertyKey-attributes"><span class="nav-number">2.9.</span> <span class="nav-text">Reflect.defineProperty(target, propertyKey, attributes)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reflect-getOwnPropertyDescriptor-target-propertyKey"><span class="nav-number">2.10.</span> <span class="nav-text">Reflect.getOwnPropertyDescriptor(target, propertyKey)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reflect-isExtensible-target"><span class="nav-number">2.11.</span> <span class="nav-text">Reflect.isExtensible (target)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reflect-preventExtensions-target"><span class="nav-number">2.12.</span> <span class="nav-text">Reflect.preventExtensions(target)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reflect-ownKeys-target"><span class="nav-number">2.13.</span> <span class="nav-text">Reflect.ownKeys (target)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实例：使用-Proxy-实现观察者模式"><span class="nav-number">3.</span> <span class="nav-text">实例：使用 Proxy 实现观察者模式</span></a></li></ol></div>
             
 
           </div>
@@ -915,9 +925,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://zhengshikun.site/2018/12/18/webpack4-简单配置/';
-          this.page.identifier = '2018/12/18/webpack4-简单配置/';
-          this.page.title = 'webpack4-简单配置';
+          this.page.url = 'http://zhengshikun.site/2018/12/22/es6-Reflect/';
+          this.page.identifier = '2018/12/22/es6-Reflect/';
+          this.page.title = 'es6-Reflect';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://zhengshikun.disqus.com/embed.js';
