@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhengshikun.site/"/>
-  <updated>2018-12-22T06:11:00.831Z</updated>
+  <updated>2018-12-23T07:37:12.234Z</updated>
   <id>http://zhengshikun.site/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>es6-Promise对象</title>
+    <link href="http://zhengshikun.site/2018/12/23/es6-Promise%E5%AF%B9%E8%B1%A1/"/>
+    <id>http://zhengshikun.site/2018/12/23/es6-Promise对象/</id>
+    <published>2018-12-23T05:39:43.000Z</published>
+    <updated>2018-12-23T07:37:12.234Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这篇主要总结“es6标准入门”这本书的Promise对象。&lt;br&gt;把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://zhengshikun.site/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="js" scheme="http://zhengshikun.site/tags/js/"/>
+    
+      <category term="es6" scheme="http://zhengshikun.site/tags/es6/"/>
+    
+  </entry>
   
   <entry>
     <title>es6-Reflect</title>
@@ -439,28 +461,6 @@
       <category term="vscode" scheme="http://zhengshikun.site/tags/vscode/"/>
     
       <category term="插件" scheme="http://zhengshikun.site/tags/%E6%8F%92%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>原生的Ajax</title>
-    <link href="http://zhengshikun.site/2018/12/11/%E5%8E%9F%E7%94%9F%E7%9A%84ajax/"/>
-    <id>http://zhengshikun.site/2018/12/11/原生的ajax/</id>
-    <published>2018-12-11T06:46:39.000Z</published>
-    <updated>2018-12-11T07:09:48.121Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;code&gt;Ajax&lt;/code&gt; = 异步&lt;code&gt;JavaScript&lt;/code&gt;和&lt;code&gt;xml&lt;/code&gt;。&lt;br&gt;&lt;code&gt;Ajax&lt;/code&gt;是一种用于创建快速动态网页的技术。&lt;br&gt;通过在后台与服务器进行少量数据交换，&lt;code&gt;Ajax&lt;/code&gt; 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。&lt;br&gt;传统的网页（不使用 &lt;code&gt;Ajax&lt;/code&gt;）如果需要更新内容，必需重载整个网页面。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="学习笔记" scheme="http://zhengshikun.site/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="js" scheme="http://zhengshikun.site/tags/js/"/>
-    
-      <category term="Ajax" scheme="http://zhengshikun.site/tags/Ajax/"/>
     
   </entry>
   
