@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="这篇主要总结“es6标准入门”这本书的Class的继承。把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。">
+<meta name="description" content="这篇主要总结“es6标准入门”这本书的Module的语法。把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。">
 <meta name="keywords" content="js,es6">
 <meta property="og:type" content="article">
-<meta property="og:title" content="es6-Class的继承">
-<meta property="og:url" content="http://zhengshikun.site/2018/12/27/es6-Class的继承/index.html">
+<meta property="og:title" content="es6-Module的语法">
+<meta property="og:url" content="http://zhengshikun.site/2019/01/01/es6-Module的语法/index.html">
 <meta property="og:site_name" content="骑着毛驴的boy">
-<meta property="og:description" content="这篇主要总结“es6标准入门”这本书的Class的继承。把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。">
+<meta property="og:description" content="这篇主要总结“es6标准入门”这本书的Module的语法。把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-27T06:56:58.153Z">
+<meta property="og:updated_time" content="2019-01-01T07:04:15.740Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="es6-Class的继承">
-<meta name="twitter:description" content="这篇主要总结“es6标准入门”这本书的Class的继承。把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。">
+<meta name="twitter:title" content="es6-Module的语法">
+<meta name="twitter:description" content="这篇主要总结“es6标准入门”这本书的Module的语法。把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。">
 
 
 
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://zhengshikun.site/2018/12/27/es6-Class的继承/">
+  <link rel="canonical" href="http://zhengshikun.site/2019/01/01/es6-Module的语法/">
 
 
 
 
 
-  <title>es6-Class的继承 | 骑着毛驴的boy</title>
+  <title>es6-Module的语法 | 骑着毛驴的boy</title>
   
 
 
@@ -314,7 +314,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zhengshikun.site/2018/12/27/es6-Class的继承/">
+    <link itemprop="mainEntityOfPage" href="http://zhengshikun.site/2019/01/01/es6-Module的语法/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhengshikun">
@@ -331,7 +331,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">es6-Class的继承</h1>
+          <h1 class="post-title" itemprop="name headline">es6-Module的语法</h1>
         
 
         <div class="post-meta">
@@ -343,8 +343,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-27T14:17:23+08:00">
-                2018-12-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-01T14:24:26+08:00">
+                2019-01-01
               </time>
             
 
@@ -384,8 +384,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/12/27/es6-Class的继承/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/12/27/es6-Class的继承/" itemprop="commentCount"></span>
+                <a href="/2019/01/01/es6-Module的语法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/01/es6-Module的语法/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -393,7 +393,7 @@
 
           
           
-             <span id="/2018/12/27/es6-Class的继承/" class="leancloud_visitors" data-flag-title="es6-Class的继承">
+             <span id="/2019/01/01/es6-Module的语法/" class="leancloud_visitors" data-flag-title="es6-Module的语法">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -418,7 +418,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  989
+                  2.5k
                 </span>
               
 
@@ -434,7 +434,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  4
+                  10
                 </span>
               
             </div>
@@ -455,47 +455,102 @@
       
 
       
-        <p>这篇主要总结“es6标准入门”这本书的Class的继承。<br>把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。</p>
+        <p>这篇主要总结“es6标准入门”这本书的Module的语法。<br>把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。</p>
 <a id="more"></a>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Class 可以通过<code>extends</code>关键字实现继承，这比 ES5 的通过修改原型链实现继承，要清晰和方便很多。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class Point &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class ColorPoint extends Point &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>上面代码定义了一个<code>ColorPoint</code>类，该类通过<code>extends</code>关键字，继承了<code>Point</code>类的所有属性和方法。但是由于没有部署任何代码，所以这两个类完全一样，等于复制了一个<code>Point</code>类。下面，我们在<code>ColorPoint</code>内部加上代码。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">class ColorPoint extends Point &#123;</span><br><span class="line">  constructor(x, y, color) &#123;</span><br><span class="line">    super(x, y); // 调用父类的constructor(x, y)</span><br><span class="line">    this.color = color;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  toString() &#123;</span><br><span class="line">    return this.color + &apos; &apos; + super.toString(); // 调用父类的toString()</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="Object-getPrototypeOf"><a href="#Object-getPrototypeOf" class="headerlink" title="Object.getPrototypeOf()"></a>Object.getPrototypeOf()</h2><p><code>Object.getPrototypeOf</code>方法可以用来从子类上获取父类。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Object.getPrototypeOf(ColorPoint) === Point</span><br><span class="line">// true</span><br></pre></td></tr></table></figure>
-<h2 id="super-关键字"><a href="#super-关键字" class="headerlink" title="super 关键字"></a>super 关键字</h2><p><code>super</code>这个关键字，既可以当作函数使用，也可以当作对象使用。在这两种情况下，它的用法完全不同。</p>
-<p>第一种情况，<code>super</code>作为函数调用时，代表父类的构造函数。ES6 要求，子类的构造函数必须执行一次<code>super</code>函数。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">class A &#123;&#125;</span><br><span class="line"></span><br><span class="line">class B extends A &#123;</span><br><span class="line">  constructor() &#123;</span><br><span class="line">    super();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>第二种情况，<code>super</code>作为对象时，在普通方法中，指向父类的原型对象；在静态方法中，指向父类。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class A &#123;</span><br><span class="line">  p() &#123;</span><br><span class="line">    return 2;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class B extends A &#123;</span><br><span class="line">  constructor() &#123;</span><br><span class="line">    super();</span><br><span class="line">    console.log(super.p()); // 2</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let b = new B();</span><br></pre></td></tr></table></figure>
-<h2 id="类的-prototype-属性和-proto-属性"><a href="#类的-prototype-属性和-proto-属性" class="headerlink" title="类的 prototype 属性和__proto__属性"></a>类的 prototype 属性和<code>__proto__</code>属性</h2><p>大多数浏览器的 ES5 实现之中，每一个对象都有<code>__proto__</code>属性，指向对应的构造函数的<code>prototype</code>属性。Class 作为构造函数的语法糖，同时有<code>prototype</code>属性和<code>__proto__</code>属性，因此同时存在两条继承链。</p>
-<p>子类的<code>__proto__</code>属性，表示构造函数的继承，总是指向父类。</p>
-<p>子类<code>prototype</code>属性的<code>__proto__</code>属性，表示方法的继承，总是指向父类的prototype属性。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">class A &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class B extends A &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">B.__proto__ === A // true</span><br><span class="line">B.prototype.__proto__ === A.prototype // true</span><br></pre></td></tr></table></figure>
-<h3 id="实例的-proto-属性"><a href="#实例的-proto-属性" class="headerlink" title="实例的 __proto__ 属性"></a>实例的 <code>__proto__</code> 属性</h3><p>子类实例的<code>__proto__</code>属性的<code>__proto__</code>属性，指向父类实例的<code>__proto__</code>属性。也就是说，子类的原型的原型，是父类的原型。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var p1 = new Point(2, 3);</span><br><span class="line">var p2 = new ColorPoint(2, 3, &apos;red&apos;);</span><br><span class="line"></span><br><span class="line">p2.__proto__ === p1.__proto__ // false</span><br><span class="line">p2.__proto__.__proto__ === p1.__proto__ // true</span><br></pre></td></tr></table></figure>
-<p>上面代码中，<code>ColorPoint</code>继承了<code>Point</code>，导致前者原型的原型是后者的原型。</p>
-<p>因此，通过子类实例的<code>__proto__</code>.<code>__proto__</code>属性，可以修改父类实例的行为。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">p2.__proto__.__proto__.printName = function () &#123;</span><br><span class="line">  console.log(&apos;Ha&apos;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">p1.printName() // &quot;Ha&quot;</span><br></pre></td></tr></table></figure>
-<h2 id="原生构造函数的继承"><a href="#原生构造函数的继承" class="headerlink" title="原生构造函数的继承"></a>原生构造函数的继承</h2><p>原生构造函数是指语言内置的构造函数，通常用来生成数据结构。ECMAScript 的原生构造函数大致有下面这些。</p>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>在 ES6 之前，社区制定了一些模块加载方案，最主要的有 CommonJS 和 AMD 两种。前者用于服务器，后者用于浏览器。ES6 在语言标准的层面上，实现了模块功能，而且实现得相当简单，完全可以取代 CommonJS 和 AMD 规范，成为浏览器和服务器通用的模块解决方案。</p>
+<p>ES6 模块的设计思想是尽量的静态化，使得编译时就能确定模块的依赖关系，以及输入和输出的变量。CommonJS 和 AMD 模块，都只能在运行时确定这些东西。比如，CommonJS 模块就是对象，输入时必须查找对象属性。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// CommonJS模块</span><br><span class="line">let &#123; stat, exists, readFile &#125; = require(&apos;fs&apos;);</span><br><span class="line"></span><br><span class="line">// 等同于</span><br><span class="line">let _fs = require(&apos;fs&apos;);</span><br><span class="line">let stat = _fs.stat;</span><br><span class="line">let exists = _fs.exists;</span><br><span class="line">let readfile = _fs.readfile;</span><br></pre></td></tr></table></figure>
+<p>ES6 模块不是对象，而是通过export命令显式指定输出的代码，再通过import命令输入。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// ES6模块</span><br><span class="line">import &#123; stat, exists, readFile &#125; from &apos;fs&apos;;</span><br></pre></td></tr></table></figure>
+<p>上面代码的实质是从fs模块加载 3 个方法，其他方法不加载。这种加载称为“编译时加载”或者静态加载，即 ES6 可以在编译时就完成模块加载，效率要比 CommonJS 模块的加载方式高。当然，这也导致了没法引用 ES6 模块本身，因为它不是对象。</p>
+<h2 id="严格模式"><a href="#严格模式" class="headerlink" title="严格模式"></a>严格模式</h2><p>ES6 的模块自动采用严格模式，不管你有没有在模块头部加上”use strict”;。</p>
+<p>严格模式主要有以下限制。</p>
 <ul>
-<li>Boolean()</li>
-<li>Number()</li>
-<li>String()</li>
-<li>Array()</li>
-<li>Date()</li>
-<li>Function()</li>
-<li>RegExp()</li>
-<li>Error()</li>
-<li>Object()</li>
+<li>变量必须声明后再使用</li>
+<li>函数的参数不能有同名属性，否则报错</li>
+<li>不能使用with语句</li>
+<li>不能对只读属性赋值，否则报错</li>
+<li>不能使用前缀 0 表示八进制数，否则报错</li>
+<li>不能删除不可删除的属性，否则报错</li>
+<li>不能删除变量delete prop，会报错，只能删除属性delete global[prop]</li>
+<li>eval不会在它的外层作用域引入变量</li>
+<li>eval和arguments不能被重新赋值</li>
+<li>arguments不会自动反映函数参数的变化</li>
+<li>不能使用arguments.callee</li>
+<li>不能使用arguments.caller</li>
+<li>禁止this指向全局对象</li>
+<li>不能使用fn.caller和fn.arguments获取函数调用的堆栈</li>
+<li>增加了保留字（比如protected、static和interface）</li>
 </ul>
-<h2 id="Mixin-模式的实现"><a href="#Mixin-模式的实现" class="headerlink" title="Mixin 模式的实现"></a>Mixin 模式的实现</h2><p>Mixin 指的是多个对象合成一个新的对象，新对象具有各个组成成员的接口。它的最简单实现如下。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">const a = &#123;</span><br><span class="line">  a: &apos;a&apos;</span><br><span class="line">&#125;;</span><br><span class="line">const b = &#123;</span><br><span class="line">  b: &apos;b&apos;</span><br><span class="line">&#125;;</span><br><span class="line">const c = &#123;...a, ...b&#125;; // &#123;a: &apos;a&apos;, b: &apos;b&apos;&#125;</span><br></pre></td></tr></table></figure>
-<p>上面代码中，c对象是a对象和b对象的合成，具有两者的接口。</p>
-<p>下面是一个更完备的实现，将多个类的接口“混入”（mix in）另一个类。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">function mix(...mixins) &#123;</span><br><span class="line">  class Mix &#123;&#125;</span><br><span class="line"></span><br><span class="line">  for (let mixin of mixins) &#123;</span><br><span class="line">    copyProperties(Mix.prototype, mixin); // 拷贝实例属性</span><br><span class="line">    copyProperties(Mix.prototype, Reflect.getPrototypeOf(mixin)); // 拷贝原型属性</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  return Mix;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function copyProperties(target, source) &#123;</span><br><span class="line">  for (let key of Reflect.ownKeys(source)) &#123;</span><br><span class="line">    if ( key !== &quot;constructor&quot;</span><br><span class="line">      &amp;&amp; key !== &quot;prototype&quot;</span><br><span class="line">      &amp;&amp; key !== &quot;name&quot;</span><br><span class="line">    ) &#123;</span><br><span class="line">      let desc = Object.getOwnPropertyDescriptor(source, key);</span><br><span class="line">      Object.defineProperty(target, key, desc);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>上面代码的mix函数，可以将多个对象合成为一个类。使用的时候，只要继承这个类即可。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">class DistributedEdit extends mix(Loggable, Serializable) &#123;</span><br><span class="line">  // ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中，尤其需要注意<code>this</code>的限制。ES6 模块之中，顶层的<code>this</code>指向<code>undefined</code>，即不应该在顶层代码使用<code>this</code>。</p>
+<h2 id="export-命令"><a href="#export-命令" class="headerlink" title="export 命令"></a>export 命令</h2><p>模块功能主要由两个命令构成：export和import。export命令用于规定模块的对外接口，import命令用于输入其他模块提供的功能。</p>
+<p>一个模块就是一个独立的文件。该文件内部的所有变量，外部无法获取。如果你希望外部能够读取模块内部的某个变量，就必须使用export关键字输出该变量。下面是一个 JS 文件，里面使用export命令输出变量。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// profile.js</span><br><span class="line">var firstName = &apos;Michael&apos;;</span><br><span class="line">var lastName = &apos;Jackson&apos;;</span><br><span class="line">var year = 1958;</span><br><span class="line"></span><br><span class="line">export &#123;firstName, lastName, year&#125;;</span><br></pre></td></tr></table></figure>
+<p>export命令除了输出变量，还可以输出函数或类（class）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export function multiply(x, y) &#123;</span><br><span class="line">  return x * y;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>通常情况下，export输出的变量就是本来的名字，但是可以使用as关键字重命名。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function v1() &#123; ... &#125;</span><br><span class="line">function v2() &#123; ... &#125;</span><br><span class="line"></span><br><span class="line">export &#123;</span><br><span class="line">  v1 as streamV1,</span><br><span class="line">  v2 as streamV2,</span><br><span class="line">  v2 as streamLatestVersion</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="import-命令"><a href="#import-命令" class="headerlink" title="import 命令"></a>import 命令</h2><p>使用<code>export</code>命令定义了模块的对外接口以后，其他 JS 文件就可以通过<code>import</code>命令加载这个模块。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// main.js</span><br><span class="line">import &#123;firstName, lastName, year&#125; from &apos;./profile.js&apos;;</span><br><span class="line"></span><br><span class="line">function setName(element) &#123;</span><br><span class="line">  element.textContent = firstName + &apos; &apos; + lastName;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果想为输入的变量重新取一个名字，import命令要使用as关键字，将输入的变量重命名。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import &#123; lastName as surname &#125; from &apos;./profile.js&apos;;</span><br></pre></td></tr></table></figure>
+<p>import命令输入的变量都是只读的，因为它的本质是输入接口。也就是说，不允许在加载模块的脚本里面，改写接口。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import &#123;a&#125; from &apos;./xxx.js&apos;</span><br><span class="line"></span><br><span class="line">a = &#123;&#125;; // Syntax Error : &apos;a&apos; is read-only;</span><br></pre></td></tr></table></figure>
+<h2 id="模块的整体加载"><a href="#模块的整体加载" class="headerlink" title="模块的整体加载"></a>模块的整体加载</h2><p>除了指定加载某个输出值，还可以使用整体加载，即用星号（<code>*</code>）指定一个对象，所有输出值都加载在这个对象上面。</p>
+<p>下面是一个<code>circle.js</code>文件，它输出两个方法<code>area</code>和<code>circumference</code>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// circle.js</span><br><span class="line"></span><br><span class="line">export function area(radius) &#123;</span><br><span class="line">  return Math.PI * radius * radius;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">export function circumference(radius) &#123;</span><br><span class="line">  return 2 * Math.PI * radius;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>现在，加载这个模块。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// main.js</span><br><span class="line"></span><br><span class="line">import &#123; area, circumference &#125; from &apos;./circle&apos;;</span><br><span class="line"></span><br><span class="line">console.log(&apos;圆面积：&apos; + area(4));</span><br><span class="line">console.log(&apos;圆周长：&apos; + circumference(14));</span><br></pre></td></tr></table></figure>
+<p>上面写法是逐一指定要加载的方法，整体加载的写法如下。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">import * as circle from &apos;./circle&apos;;</span><br><span class="line"></span><br><span class="line">console.log(&apos;圆面积：&apos; + circle.area(4));</span><br><span class="line">console.log(&apos;圆周长：&apos; + circle.circumference(14));</span><br></pre></td></tr></table></figure>
+<p>注意，模块整体加载所在的那个对象（上例是circle），应该是可以静态分析的，所以不允许运行时改变。下面的写法都是不允许的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import * as circle from &apos;./circle&apos;;</span><br><span class="line"></span><br><span class="line">// 下面两行都是不允许的</span><br><span class="line">circle.foo = &apos;hello&apos;;</span><br><span class="line">circle.area = function () &#123;&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="export-default-命令"><a href="#export-default-命令" class="headerlink" title="export default 命令"></a>export default 命令</h2><p>从前面的例子可以看出，使用import命令的时候，用户需要知道所要加载的变量名或函数名，否则无法加载。但是，用户肯定希望快速上手，未必愿意阅读文档，去了解模块有哪些属性和方法。</p>
+<p>为了给用户提供方便，让他们不用阅读文档就能加载模块，就要用到export default命令，为模块指定默认输出。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// export-default.js</span><br><span class="line">export default function () &#123;</span><br><span class="line">  console.log(&apos;foo&apos;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其他模块加载该模块时，import命令可以为该匿名函数指定任意名字。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// import-default.js</span><br><span class="line">import customName from &apos;./export-default&apos;;</span><br><span class="line">customName(); // &apos;foo&apos;</span><br></pre></td></tr></table></figure>
+<p>上面代码的import命令，可以用任意名称指向export-default.js输出的方法，这时就不需要知道原模块输出的函数名。需要注意的是，这时import命令后面，不使用大括号。</p>
+<p>export default命令用在非匿名函数前，也是可以的。加载的时候，视同匿名函数加载。</p>
+<p>有了export default命令，输入模块时就非常直观了，以输入 lodash 模块为例。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import _ from &apos;lodash&apos;;</span><br></pre></td></tr></table></figure>
+<p>如果想在一条import语句中，同时输入默认方法和其他接口，可以写成下面这样。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import _, &#123; each, forEach &#125; from &apos;lodash&apos;;</span><br></pre></td></tr></table></figure>
+<p>对应上面代码的export语句如下。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">export default function (obj) &#123;</span><br><span class="line">  // ···</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">export function each(obj, iterator, context) &#123;</span><br><span class="line">  // ···</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">export &#123; each as forEach &#125;;</span><br></pre></td></tr></table></figure>
+<p>export default也可以用来输出类。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// MyClass.js</span><br><span class="line">export default class &#123; ... &#125;</span><br><span class="line"></span><br><span class="line">// main.js</span><br><span class="line">import MyClass from &apos;MyClass&apos;;</span><br><span class="line">let o = new MyClass();</span><br></pre></td></tr></table></figure>
+<h2 id="export-与-import-的复合写法"><a href="#export-与-import-的复合写法" class="headerlink" title="export 与 import 的复合写法"></a>export 与 import 的复合写法</h2><p>如果在一个模块之中，先输入后输出同一个模块，<code>import</code>语句可以与<code>export</code>语句写在一起。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">export &#123; foo, bar &#125; from &apos;my_module&apos;;</span><br><span class="line"></span><br><span class="line">// 可以简单理解为</span><br><span class="line">import &#123; foo, bar &#125; from &apos;my_module&apos;;</span><br><span class="line">export &#123; foo, bar &#125;;</span><br></pre></td></tr></table></figure>
+<p>模块的接口改名和整体输出，也可以采用这种写法。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 接口改名</span><br><span class="line">export &#123; foo as myFoo &#125; from &apos;my_module&apos;;</span><br><span class="line"></span><br><span class="line">// 整体输出</span><br><span class="line">export * from &apos;my_module&apos;;</span><br></pre></td></tr></table></figure>
+<h2 id="模块的继承"><a href="#模块的继承" class="headerlink" title="模块的继承"></a>模块的继承</h2><p>模块之间也可以继承。</p>
+<p>假设有一个circleplus模块，继承了circle模块。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// circleplus.js</span><br><span class="line"></span><br><span class="line">export * from &apos;circle&apos;;</span><br><span class="line">export var e = 2.71828182846;</span><br><span class="line">export default function(x) &#123;</span><br><span class="line">  return Math.exp(x);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面代码中的export <em>，表示再输出circle模块的所有属性和方法。注意，export </em>命令会忽略circle模块的default方法。然后，上面代码又输出了自定义的e变量和默认方法。</p>
+<p>这时，也可以将circle的属性或方法，改名后再输出。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// circleplus.js</span><br><span class="line"></span><br><span class="line">export &#123; area as circleArea &#125; from &apos;circle&apos;;</span><br></pre></td></tr></table></figure>
+<p>上面代码表示，只输出circle模块的area方法，且将其改名为circleArea。</p>
+<p>加载上面模块的写法如下。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// main.js</span><br><span class="line"></span><br><span class="line">import * as math from &apos;circleplus&apos;;</span><br><span class="line">import exp from &apos;circleplus&apos;;</span><br><span class="line">console.log(exp(math.e));</span><br></pre></td></tr></table></figure>
+<p>上面代码中的import exp表示，将circleplus模块的默认方法加载为exp方法。</p>
+<h2 id="跨模块常量"><a href="#跨模块常量" class="headerlink" title="跨模块常量"></a>跨模块常量</h2><p>本书介绍const命令的时候说过，const声明的常量只在当前代码块有效。如果想设置跨模块的常量（即跨多个文件），或者说一个值要被多个模块共享，可以采用下面的写法。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">// constants.js 模块</span><br><span class="line">export const A = 1;</span><br><span class="line">export const B = 3;</span><br><span class="line">export const C = 4;</span><br><span class="line"></span><br><span class="line">// test1.js 模块</span><br><span class="line">import * as constants from &apos;./constants&apos;;</span><br><span class="line">console.log(constants.A); // 1</span><br><span class="line">console.log(constants.B); // 3</span><br><span class="line"></span><br><span class="line">// test2.js 模块</span><br><span class="line">import &#123;A, B&#125; from &apos;./constants&apos;;</span><br><span class="line">console.log(A); // 1</span><br><span class="line">console.log(B); // 3</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// constants/db.js</span><br><span class="line">export const db = &#123;</span><br><span class="line">  url: &apos;http://my.couchdbserver.local:5984&apos;,</span><br><span class="line">  admin_username: &apos;admin&apos;,</span><br><span class="line">  admin_password: &apos;admin password&apos;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">// constants/user.js</span><br><span class="line">export const users = [&apos;root&apos;, &apos;admin&apos;, &apos;staff&apos;, &apos;ceo&apos;, &apos;chief&apos;, &apos;moderator&apos;];</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// constants/index.js</span><br><span class="line">export &#123;db&#125; from &apos;./db&apos;;</span><br><span class="line">export &#123;users&#125; from &apos;./users&apos;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// script.js</span><br><span class="line">import &#123;db, users&#125; from &apos;./constants/index&apos;;</span><br></pre></td></tr></table></figure>
+<h2 id="import"><a href="#import" class="headerlink" title="import()"></a>import()</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>前面介绍过，import命令会被 JavaScript 引擎静态分析，先于模块内的其他语句执行（import命令叫做“连接” binding 其实更合适）。所以，下面的代码会报错。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 报错</span><br><span class="line">if (x === 2) &#123;</span><br><span class="line">  import MyModual from &apos;./myModual&apos;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>因此，有一个提案，建议引入import()函数，完成动态加载。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import(specifier)</span><br></pre></td></tr></table></figure>
+<h3 id="适用场合"><a href="#适用场合" class="headerlink" title="适用场合"></a>适用场合</h3><h4 id="按需加载"><a href="#按需加载" class="headerlink" title="按需加载"></a>按需加载</h4><p>import()可以在需要的时候，再加载某个模块。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">button.addEventListener(&apos;click&apos;, event =&gt; &#123;</span><br><span class="line">  import(&apos;./dialogBox.js&apos;)</span><br><span class="line">  .then(dialogBox =&gt; &#123;</span><br><span class="line">    dialogBox.open();</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch(error =&gt; &#123;</span><br><span class="line">    /* Error handling */</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h4 id="条件加载"><a href="#条件加载" class="headerlink" title="条件加载"></a>条件加载</h4><p>import()可以放在if代码块，根据不同的情况，加载不同的模块。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">if (condition) &#123;</span><br><span class="line">  import(&apos;moduleA&apos;).then(...);</span><br><span class="line">&#125; else &#123;</span><br><span class="line">  import(&apos;moduleB&apos;).then(...);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="动态的模块路径"><a href="#动态的模块路径" class="headerlink" title="动态的模块路径"></a>动态的模块路径</h4><p>import()允许模块路径动态生成。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import(f())</span><br><span class="line">.then(...);</span><br></pre></td></tr></table></figure>
+<h3 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h3><p>import()加载模块成功以后，这个模块会作为一个对象，当作then方法的参数。因此，可以使用对象解构赋值的语法，获取输出接口。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">import(&apos;./myModule.js&apos;)</span><br><span class="line">.then((&#123;export1, export2&#125;) =&gt; &#123;</span><br><span class="line">  // ...·</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -528,8 +583,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/27/es6-Class的基本语法/" rel="next" title="es6-Class的基本语法">
-                <i class="fa fa-chevron-left"></i> es6-Class的基本语法
+              <a href="/2018/12/30/es6-修饰器/" rel="next" title="es6-修饰器">
+                <i class="fa fa-chevron-left"></i> es6-修饰器
               </a>
             
           </div>
@@ -537,10 +592,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/30/es6-修饰器/" rel="prev" title="es6-修饰器">
-                es6-修饰器 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -731,7 +782,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Object-getPrototypeOf"><span class="nav-number">2.</span> <span class="nav-text">Object.getPrototypeOf()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#super-关键字"><span class="nav-number">3.</span> <span class="nav-text">super 关键字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类的-prototype-属性和-proto-属性"><span class="nav-number">4.</span> <span class="nav-text">类的 prototype 属性和__proto__属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实例的-proto-属性"><span class="nav-number">4.1.</span> <span class="nav-text">实例的 __proto__ 属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#原生构造函数的继承"><span class="nav-number">5.</span> <span class="nav-text">原生构造函数的继承</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mixin-模式的实现"><span class="nav-number">6.</span> <span class="nav-text">Mixin 模式的实现</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#严格模式"><span class="nav-number">2.</span> <span class="nav-text">严格模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#export-命令"><span class="nav-number">3.</span> <span class="nav-text">export 命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#import-命令"><span class="nav-number">4.</span> <span class="nav-text">import 命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模块的整体加载"><span class="nav-number">5.</span> <span class="nav-text">模块的整体加载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#export-default-命令"><span class="nav-number">6.</span> <span class="nav-text">export default 命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#export-与-import-的复合写法"><span class="nav-number">7.</span> <span class="nav-text">export 与 import 的复合写法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模块的继承"><span class="nav-number">8.</span> <span class="nav-text">模块的继承</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#跨模块常量"><span class="nav-number">9.</span> <span class="nav-text">跨模块常量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#import"><span class="nav-number">10.</span> <span class="nav-text">import()</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#简介"><span class="nav-number">10.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#适用场合"><span class="nav-number">10.2.</span> <span class="nav-text">适用场合</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#按需加载"><span class="nav-number">10.2.1.</span> <span class="nav-text">按需加载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#条件加载"><span class="nav-number">10.2.2.</span> <span class="nav-text">条件加载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#动态的模块路径"><span class="nav-number">10.2.3.</span> <span class="nav-text">动态的模块路径</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意点"><span class="nav-number">10.3.</span> <span class="nav-text">注意点</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -906,9 +957,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://zhengshikun.site/2018/12/27/es6-Class的继承/';
-          this.page.identifier = '2018/12/27/es6-Class的继承/';
-          this.page.title = 'es6-Class的继承';
+          this.page.url = 'http://zhengshikun.site/2019/01/01/es6-Module的语法/';
+          this.page.identifier = '2019/01/01/es6-Module的语法/';
+          this.page.title = 'es6-Module的语法';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://zhengshikun.disqus.com/embed.js';
