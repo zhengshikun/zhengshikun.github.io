@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhengshikun.site/"/>
-  <updated>2019-01-10T07:49:06.157Z</updated>
+  <updated>2019-01-12T06:30:07.157Z</updated>
   <id>http://zhengshikun.site/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue-过渡and动画</title>
+    <link href="http://zhengshikun.site/2019/01/12/vue-%E8%BF%87%E6%B8%A1and%E5%8A%A8%E7%94%BB/"/>
+    <id>http://zhengshikun.site/2019/01/12/vue-过渡and动画/</id>
+    <published>2019-01-12T05:55:45.000Z</published>
+    <updated>2019-01-12T06:30:07.157Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。&lt;br&gt;与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://zhengshikun.site/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="js" scheme="http://zhengshikun.site/tags/js/"/>
+    
+      <category term="框架" scheme="http://zhengshikun.site/tags/%E6%A1%86%E6%9E%B6/"/>
+    
+      <category term="vue" scheme="http://zhengshikun.site/tags/vue/"/>
+    
+  </entry>
   
   <entry>
     <title>vue-深入了解组件</title>
@@ -439,28 +463,6 @@
       <category term="webpack" scheme="http://zhengshikun.site/tags/webpack/"/>
     
       <category term="配置" scheme="http://zhengshikun.site/tags/%E9%85%8D%E7%BD%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>es6-数组的扩展</title>
-    <link href="http://zhengshikun.site/2018/12/18/es6-%E6%95%B0%E7%BB%84%E7%9A%84%E6%89%A9%E5%B1%95/"/>
-    <id>http://zhengshikun.site/2018/12/18/es6-数组的扩展/</id>
-    <published>2018-12-18T06:00:03.000Z</published>
-    <updated>2018-12-18T07:10:27.724Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;这篇主要总结“es6标准入门”这本书的数组的扩展。&lt;br&gt;把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="学习笔记" scheme="http://zhengshikun.site/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="js" scheme="http://zhengshikun.site/tags/js/"/>
-    
-      <category term="es6" scheme="http://zhengshikun.site/tags/es6/"/>
     
   </entry>
   
