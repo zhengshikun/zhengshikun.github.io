@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhengshikun.site/"/>
-  <updated>2019-01-12T06:30:07.157Z</updated>
+  <updated>2019-01-13T07:41:15.252Z</updated>
   <id>http://zhengshikun.site/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue-可复用性and组合</title>
+    <link href="http://zhengshikun.site/2019/01/13/vue-%E5%8F%AF%E5%A4%8D%E7%94%A8%E6%80%A7and%E7%BB%84%E5%90%88/"/>
+    <id>http://zhengshikun.site/2019/01/13/vue-可复用性and组合/</id>
+    <published>2019-01-13T06:34:13.000Z</published>
+    <updated>2019-01-13T07:41:15.252Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。&lt;br&gt;与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://zhengshikun.site/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="js" scheme="http://zhengshikun.site/tags/js/"/>
+    
+      <category term="框架" scheme="http://zhengshikun.site/tags/%E6%A1%86%E6%9E%B6/"/>
+    
+      <category term="vue" scheme="http://zhengshikun.site/tags/vue/"/>
+    
+  </entry>
   
   <entry>
     <title>vue-过渡and动画</title>
@@ -439,30 +463,6 @@
       <category term="js" scheme="http://zhengshikun.site/tags/js/"/>
     
       <category term="es6" scheme="http://zhengshikun.site/tags/es6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>webpack4-简单配置</title>
-    <link href="http://zhengshikun.site/2018/12/18/webpack4-%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE/"/>
-    <id>http://zhengshikun.site/2018/12/18/webpack4-简单配置/</id>
-    <published>2018-12-18T07:28:08.000Z</published>
-    <updated>2018-12-18T07:59:16.979Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本质上，&lt;code&gt;webpack&lt;/code&gt; 是一个现代 JavaScript 应用程序的静态模块打包器(module bundler)。当 &lt;code&gt;webpack&lt;/code&gt; 处理应用程序时，它会递归地构建一个依赖关系图(dependency graph)，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个 &lt;code&gt;bundle&lt;/code&gt;。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="常用工具" scheme="http://zhengshikun.site/categories/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="js" scheme="http://zhengshikun.site/tags/js/"/>
-    
-      <category term="webpack" scheme="http://zhengshikun.site/tags/webpack/"/>
-    
-      <category term="配置" scheme="http://zhengshikun.site/tags/%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
