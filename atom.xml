@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhengshikun.site/"/>
-  <updated>2019-01-13T07:41:15.252Z</updated>
+  <updated>2019-02-21T06:07:21.721Z</updated>
   <id>http://zhengshikun.site/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue-VueRouter</title>
+    <link href="http://zhengshikun.site/2019/02/18/vue-VueRouter/"/>
+    <id>http://zhengshikun.site/2019/02/18/vue-VueRouter/</id>
+    <published>2019-02-18T08:18:09.000Z</published>
+    <updated>2019-02-21T06:07:21.721Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Vue Router 是 Vue.js 官方的路由管理器。它和 Vue.js 的核心深度集成，让构建单页面应用变得易如反掌。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://zhengshikun.site/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="js" scheme="http://zhengshikun.site/tags/js/"/>
+    
+      <category term="框架" scheme="http://zhengshikun.site/tags/%E6%A1%86%E6%9E%B6/"/>
+    
+      <category term="vue" scheme="http://zhengshikun.site/tags/vue/"/>
+    
+  </entry>
   
   <entry>
     <title>vue-可复用性and组合</title>
@@ -428,28 +452,6 @@
     <id>http://zhengshikun.site/2018/12/19/es6-对象的新增方法/</id>
     <published>2018-12-19T07:21:16.000Z</published>
     <updated>2018-12-19T07:56:17.067Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;这篇主要总结“es6标准入门”这本书的对象的扩展。&lt;br&gt;把我个人认为重要的整理出来，不会详细介绍，哪里出问题之后再做修改。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="学习笔记" scheme="http://zhengshikun.site/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="js" scheme="http://zhengshikun.site/tags/js/"/>
-    
-      <category term="es6" scheme="http://zhengshikun.site/tags/es6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>es6-对象的扩展</title>
-    <link href="http://zhengshikun.site/2018/12/19/es6-%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%89%A9%E5%B1%95/"/>
-    <id>http://zhengshikun.site/2018/12/19/es6-对象的扩展/</id>
-    <published>2018-12-19T05:57:37.000Z</published>
-    <updated>2018-12-19T07:20:10.789Z</updated>
     
     <summary type="html">
     
